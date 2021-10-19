@@ -1,0 +1,705 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    </head>  
+   <style>
+
+   .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.container2 {
+  
+  border-radius: 2px;
+  background-color:white;
+  width: 80%;
+  padding: 20px;
+}
+.fa {
+  padding:10px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+    margin: 5px 2px;
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color:white;
+  color: black;
+}
+.fa-instagram {
+  background-color: white;
+  color:black;
+}
+.fa-yelp {
+  background: white;
+  color: black;
+}
+
+/*.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}*/
+
+.menu-group-heading {
+  margin: 0;
+  font-weight: bold;
+
+  padding-bottom: 0.5em;
+    padding-top: 0em;
+        font-size: 20px;
+
+
+  
+ text-align: left;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+.menu-item-other {
+  margin-right: 0em;
+  text-align: left;
+  padding-bottom: 3em;
+  padding-top: 0;
+          font-size: 11px;
+
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 2;
+ 
+  margin-left: 0;
+  margin-top: 0;
+    margin-bottom: 5;
+
+  
+   padding-right: 10em;
+ 
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+        p {
+         margin: 35px 150px;
+         }
+
+
+
+          body{
+
+            font-family: 'Encode sans Condensed', sansserif;
+            color:black;
+            font-size: 14px;
+            letter-spacing: 2px;
+            max-width: 100%;
+            overflow-x: hidden;
+            margin:0;
+            text-align: center;
+            }
+
+       header {
+          display:inline;
+                      color:black;
+
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: 'Rock Salt', cursive;
+          }
+     
+      
+
+
+     
+
+     
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+     background-color: #F0F0F0;
+
+
+    }
+
+ 
+
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+
+            
+          
+
+
+
+
+
+       li.d {
+        text-decoration: none;
+        
+
+        display: inline-block;
+         float: right;
+         border-right:1px solid #bbb;
+         line-height: 0.2;
+         margin: 12px 0px; 
+
+        color: #111;
+        text-align: right;
+        padding: 15px 20px;
+       
+        font-family: 'Encode sans Condensed', sansserif;
+        font-size: 13px;
+        letter-spacing: 10px;
+        }
+         
+       li.c {
+
+
+        display: inline;
+        display: block;
+        color: #111;
+        text-align: left;
+       
+
+        
+        padding: 5px 20px;
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-family: 'Rock Salt', cursive;
+        }
+        
+        li a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        li a.active {
+            text-decoration: underline;
+            }
+       
+
+
+  
+      li a:hover {
+          
+          text-decoration: underline;}
+
+
+nav a {
+  
+   display: inline-block;
+  display:center;
+text-align:center;
+ font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 7px;
+  color: #111;
+  padding: 15px 20px;
+  font-size: 15px;
+  margin:5;
+
+}
+
+
+     nav a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+nav a.active {
+               font-weight: bolder;
+               
+            }
+
+  
+     nav a:hover {
+          
+          text-decoration: none;}
+
+h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 40px auto 50px auto; /* keep the table centered */
+    padding:10px;font-size:13px;background-color:#c4c4c4;color:#ffffff;
+    width:90%;
+    color:black;
+    display:center;
+}
+          
+
+        
+
+      
+
+        
+
+
+   </style>
+ 
+ <ul>
+  
+  <li class="c"><a href="C:\Users\Carolina\Downloads\crazystone.html">Crazy Stone</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\location.html">LOCATION</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\hours.html">HOURS</a></li>
+
+  <li class="d"><a href="C:\Users\Carolina\Downloads\orderonline.html">ORDER ONLINE</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\reservations.html">RESERVATIONS</a></li>
+  <li class="d"><a class="active" href="C:\Users\Carolina\Downloads\menu.html">MENU</a></li>
+   
+    
+  
+  </ul>
+  <body>
+  <h1>
+  <header>
+  Menu
+  </header>
+  <nav>
+  <a href="C:\Users\Carolina\Downloads\menu.html">Appetizers</a> 
+  <a href="C:\Users\Carolina\Downloads\soupandsalad.html">Soup&Salad</a> 
+  <a href="C:\Users\Carolina\Downloads\sushisashimi.html">Sushi&Sashimi</a> 
+  <a href="C:\Users\Carolina\Downloads\classicrolls.html">Classic Rolls</a>
+  <a href="C:\Users\Carolina\Downloads\specialrolls.html">Special Rolls</a>
+  <a href="C:\Users\Carolina\Downloads\sushientrees.html">Sushi Entrees</a>
+  <a class='active' href="C:\Users\Carolina\Downloads\classicentrees.html">Classic Entrees</a>
+  <a href="C:\Users\Carolina\Downloads\stoneentrees.html">Stone Entrees</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\johnsspecials.html">John's Specials'</a>
+</nav>
+<div class="container">
+    <div class="menu">
+
+
+      <div class="menu-group-heading">
+      HIBACHI
+      </div>
+      <div class="menu-item-other">
+Served with Onion Soup, Salad and Fried Rice
+    </div>
+
+
+      <div class="menu-group">
+ <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+MIXED VEGETABLES
+</span><span class="menu-item-price">
+$16.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CHICKEN
+</span><span class="menu-item-price">
+$18.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+JUMBO SCALLOP (8PCS)
+</span><span class="menu-item-price">
+$21.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SALMON
+</span><span class="menu-item-price">
+$21.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+BLUEFIN TUNA
+</span><span class="menu-item-price">
+$21.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+N.Y STEAK
+</span><span class="menu-item-price">
+$21.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+JUMBO SHRIMP
+</span><span class="menu-item-price">
+$21.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TWIN LOBSTER TAIL
+</span><span class="menu-item-price">
+$19.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CHICKEN & STEAK HIBACHI
+</span><span class="menu-item-price">
+$19.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CHICKEN & SCALLOP HIBACHI
+</span><span class="menu-item-price">
+$24.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+STEAK & SHRIMP HIBACHI
+</span><span class="menu-item-price">
+$24.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+STEAK & SCALLOP HIBACHI
+</span><span class="menu-item-price">
+$24.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SHRIMP & SCALLOP HIBACHI
+</span><span class="menu-item-price">
+$24.75 
+</span></h3>  <p class="menu-item-description">
+Fried Rice (Brown Rice +$1)
+</p></div></div>
+
+
+
+      
+<div class="menu">
+      <div class="menu-group-heading">
+       TERIYAKI
+      </div>
+       <div class="menu-item-other">
+Served with Onion Soup, Salad and Fried Rice
+    </div>
+
+      <div class="menu-group">
+     
+      <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TOFU TERIYAKI
+</span><span class="menu-item-price">
+$11.75 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CHICKEN TERIYAKI (11oz)
+</span><span class="menu-item-price">
+$13.95 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SALMON TERIYAKI (9oz)
+</span><span class="menu-item-price">
+$14.95 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+BLUEFIN TUNA TERIYAKI (9oz)
+</span><span class="menu-item-price">
+$14.25 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+STEAK TERIYAKI (9oz)
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+JUMBO SHRIMP TERIYAKI (12pcs)
+</span><span class="menu-item-price">
+$15.25 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SEAFOOD TERIYAKI
+</span><span class="menu-item-price">
+$16.75 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+
+<div class="menu">
+<div class="menu-group-heading">
+       TEMPURA
+      </div>
+       <div class="menu-item-other">
+Served with Onion Soup, Salad and Fried Rice
+    </div>
+
+      <div class="menu-group">
+     
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+MIXED VEGETABLE
+</span><span class="menu-item-price">
+$11.75 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TEMPURA CHICKEN (6PCS)
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TEMPURA JUMBO SHRIMP
+</span><span class="menu-item-price">
+$7.95 
+</span></h3>  <p class="menu-item-description">
+6 pcs of tempura shrimp and mixed tempura vegetables<br>
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TEMPURA SEAFOOD
+</span><span class="menu-item-price">
+$8.25 
+</span></h3>  <p class="menu-item-description">
+Shrimp, scallop, salmon, kani (imitation crabmeat) & seasonal vegetables<br>
+Steamed Rice (Fried Rice +$2.50)
+</p></div></div>
+
+<div class="menu">
+<div class="menu-group-heading">
+       KATSU
+      </div>
+       <div class="menu-item-other">
+Served with Onion Soup, Salad and Fried Rice
+    </div>
+
+      <div class="menu-group">
+      <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+KATSU CHICKEN
+</span><span class="menu-item-price">
+$11.75 
+</span></h3>  <p class="menu-item-description">
+11 oz, serving with one onion soup, one salad, and one white rice (fried rice +$2.50)
+</p></div></div>
+
+<div class="menu">
+<div class="menu-group-heading">
+      Noodles & Rice
+      </div>
+       <div class="menu-item-other">
+Served with Onion Soup, Salad and Fried Rice
+    </div>
+    <div class="menu-group">
+    <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+HAWAII FRIED RICE
+</span><span class="menu-item-price">
+</span></h3>  <p class="menu-item-description">
+Pineapple, onion and egg<br>
+<br>
+Choose one:
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Vegetable
+</span><span class="menu-item-price">
+$11.75 
+</span></h4></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Chicken
+</span><span class="menu-item-price">
+$12.25 
+</span></h4>  </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Beef
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Seafood
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Shrimp
+</span><span class="menu-item-price">
+$15.75 
+</span></h4> </div></div><br>
+
+    <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+HOUSE SPICY FRIED RICE
+</span><span class="menu-item-price">
+</span></h3>  <p class="menu-item-description">
+Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables
+<br>
+<br>
+Choose one:
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Vegetable
+</span><span class="menu-item-price">
+$11.75 
+</span></h4></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Chicken
+</span><span class="menu-item-price">
+$12.25 
+</span></h4>  </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Beef
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Seafood
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Shrimp
+</span><span class="menu-item-price">
+$15.75 
+</span></h4> </div></div><br>
+
+ <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+Lo Mein or Udon</span><span class="menu-item-price">
+</span></h3>  <p class="menu-item-description">
+Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables
+<br>
+<br>
+Choose one:
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Vegetable
+</span><span class="menu-item-price">
+$11.75 
+</span></h4></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Chicken
+</span><span class="menu-item-price">
+$12.25 
+</span></h4>  </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Beef
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Seafood
+</span><span class="menu-item-price">
+$13.75 
+</span></h4> </div></div>
+<div class="menu-item"><div class="menu-item-text"> <h4 class="menu-item-heading"> <span class="menu-item-name">
+Shrimp
+</span><span class="menu-item-price">
+$15.75 
+</span></h4> </div></div><br>
+
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SINGAPORE NOODLES</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <div class="menu-item-description">
+Thin Rice Noodles Sauteed with a Combination of Chicken, Shrimp, Beef, Egg, Mixed Vegetables, and Light Curry Sauce
+</div></div></div>
+      </div>
+    </div>
+  </div></div>
+  </body>
+
+
+     
+     </h1>
+
+<center>
+  <div class="container2">
+     <br>
+    
+  TEL   (508) 573-1732  <br>
+1009 Boston Post Rd. E, Marlborough MA 01752
+<br>
+<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+
+</div>
+  
+</html>

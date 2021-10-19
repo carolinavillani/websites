@@ -1,0 +1,540 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    </head>  
+   <style>
+
+   .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.container2 {
+  
+  border-radius: 2px;
+  background-color:white;
+  width: 80%;
+  padding: 20px;
+}
+.fa {
+  padding:10px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+    margin: 5px 2px;
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color:white;
+  color: black;
+}
+.fa-instagram {
+  background-color: white;
+  color:black;
+}
+.fa-yelp {
+  background: white;
+  color: black;
+}
+
+/*.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}*/
+
+.menu-group-heading {
+  margin: 0;
+  font-weight: bold;
+
+  padding-bottom: 0.5em;
+    padding-top: 0em;
+        font-size: 20px;
+
+
+  
+ text-align: left;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+.menu-item-other {
+  margin-right: 0em;
+  text-align: left;
+  padding-bottom: 3em;
+  padding-top: 0;
+          font-size: 11px;
+
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 2;
+ 
+  margin-left: 0;
+  margin-top: 0;
+    margin-bottom: 5;
+
+  margin-right: 90;
+ 
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+        p {
+         margin: 35px 150px;
+         }
+
+
+
+          body{
+
+            font-family: 'Encode sans Condensed', sansserif;
+            color:black;
+            font-size: 14px;
+            letter-spacing: 2px;
+            max-width: 100%;
+            overflow-x: hidden;
+            margin:0;
+            text-align: center;
+            }
+
+       header {
+          display:inline;
+                      color:black;
+
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: 'Rock Salt', cursive;
+          }
+     
+      
+
+
+     
+
+     
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+     background-color: #F0F0F0;
+
+
+    }
+
+ 
+
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+
+            
+          
+
+
+
+
+
+       li.d {
+        text-decoration: none;
+        
+
+        display: inline-block;
+         float: right;
+         border-right:1px solid #bbb;
+         line-height: 0.2;
+         margin: 12px 0px; 
+
+        color: #111;
+        text-align: right;
+        padding: 15px 20px;
+       
+        font-family: 'Encode sans Condensed', sansserif;
+        font-size: 13px;
+        letter-spacing: 10px;
+        }
+         
+       li.c {
+
+
+        display: inline;
+        display: block;
+        color: #111;
+        text-align: left;
+       
+
+        
+        padding: 5px 20px;
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-family: 'Rock Salt', cursive;
+        }
+        
+        li a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        li a.active {
+            text-decoration: underline;
+            }
+       
+
+
+  
+      li a:hover {
+          
+          text-decoration: underline;}
+
+
+nav a {
+  
+  display: inline-block;
+  display:center;
+text-align:center;
+ font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 7px;
+  color: #111;
+  padding: 15px 20px;
+  font-size: 15px;
+  margin:5;
+}
+
+
+     nav a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+nav a.active {
+               font-weight: bolder;
+               
+            }
+
+  
+     nav a:hover {
+          
+          text-decoration: none;}
+
+h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 40px auto 50px auto; /* keep the table centered */
+    padding:10px;font-size:13px;background-color:#c4c4c4;color:#ffffff;
+    width:90%;
+    color:black;
+    display:center;
+}
+          
+
+        
+
+      
+
+        
+
+
+   </style>
+ 
+ <ul>
+  
+  <li class="c"><a href="C:\Users\Carolina\Downloads\crazystone.html">Crazy Stone</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\location.html">LOCATION</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\hours.html">HOURS</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\orderonline.html">ORDER ONLINE</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\reservations.html">RESERVATIONS</a></li>
+  <li class="d"><a class="active" href="C:\Users\Carolina\Downloads\menu.html">MENU</a></li>
+   
+    
+  
+  </ul>
+  <body>
+  <h1>
+  <header>
+  Menu
+  </header>
+  <nav>
+  <a href="C:\Users\Carolina\Downloads\menu.html">Appetizers</a> 
+  <a href="C:\Users\Carolina\Downloads\soupandsalad.html">Soup&Salad</a> 
+  <a href="C:\Users\Carolina\Downloads\sushisashimi.html">Sushi&Sashimi</a> 
+  <a href="C:\Users\Carolina\Downloads\classicrolls.html">Classic Rolls</a>
+  <a href="C:\Users\Carolina\Downloads\specialrolls.html">Special Rolls</a>
+  <a class='active'href="C:\Users\Carolina\Downloads\sushientrees.html">Sushi Entrees</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\classicentrees.html">Classic Entrees</a>
+    <a href="C:\Users\Carolina\Downloads\stoneentrees.html">Stone Entrees</a>
+
+  <a class="item" href="C:\Users\Carolina\Downloads\johnsspecials.html">John's Specials'</a>
+</nav>
+<div class="container">
+    <div class="menu">
+
+
+      <div class="menu-group-heading">
+       Classical Combo
+      </div>
+      <div class="menu-item-other">
+EACH COMBO COMES WITH ONE MISO SOUP AND ONE SALAD
+     </div>
+
+
+      <div class="menu-group">
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+UNAGI DON
+</span><span class="menu-item-price">
+$20.25 
+</span></h3>  <p class="menu-item-description">
+Toasted eel over sushi rice, served with miso soup
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+Tekka Don
+</span><span class="menu-item-price">
+$22.25 
+</span></h3>  <p class="menu-item-description">
+9 pcs of bluefin tuna on a bed of seasoned rice, served with miso soup
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TRIO SUSHI
+</span><span class="menu-item-price">
+$24.25 
+</span></h3>  <p class="menu-item-description">
+3 pcs of salmon, 3 pcs of bluefin tuna, 3 pcs of yellowtail, and 1 California roll, served with miso soup and salad
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CHIRASHI
+</span><span class="menu-item-price">
+$22.25 
+</span></h3>  <p class="menu-item-description">
+Chef’s choices of assorted sashimi over a bed of seasoned rice, served w. miso soup
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+VEGETABLE SUSHI COMBO
+</span><span class="menu-item-price">
+$19.75 
+</span></h3>  <p class="menu-item-description">
+Black pepper tuna and asparagus inside, topped w. striped bass, cilantro, and spicy sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SUSHI COMBO
+</span><span class="menu-item-price">
+$24.25 
+</span></h3>  <p class="menu-item-description">
+Chef’s choices of assorted 9 pcs of raw fish on seasoned rice ball plus one tuna roll, served with miso soup and salad
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SASHIMI COMBO
+</span><span class="menu-item-price">
+$27.25 
+</span></h3>  <p class="menu-item-description">
+Chef’s choices of assorted 18 pcs of raw fish, served with steamed rice, miso soup and salad
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SUSHI & SASHIMI FOR 1
+</span><span class="menu-item-price">
+$30.25 
+</span></h3>  <p class="menu-item-description">
+Chef’s choices of assorted 5 pcs sushi, 10 pcs sashimi & 1 tuna roll, served w. miso soup & salad
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SUSHI & SASHIMI FOR 2
+</span><span class="menu-item-price">
+$63.25 
+</span></h3>  <p class="menu-item-description">
+Chef’s choices of assorted 9 pcs sushi, 18 pcs sashimi, 1 california roll and 1 mind eraser special roll, served with 2 miso soups and 2 salads
+</p></div></div>
+
+
+
+      
+<div class="menu">
+      <div class="menu-group-heading">
+        Crazy Combo
+      </div><div class="menu-item-other">EVERY COMBO COMES WITH ONE MISO SOUP</div>
+      <div class="menu-group">
+      <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY ROLL COMBO
+</span><span class="menu-item-price">
+$18.75 
+</span></h3>  <p class="menu-item-description">
+SPICY TUNA ROLL, SPICY SALMON ROLL, SPICY CRABMEAT ROLL, SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+COOKED ROLL COMBO
+</span><span class="menu-item-price">
+$23.25 
+</span></h3>  <p class="menu-item-description">
+CALIFORNIA ROLL, SHRIMP TEMPURA ROLL, NEW YORK SPECIAL ROLL, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+DAVID BOAT
+</span><span class="menu-item-price">
+$23.25 
+</span></h3>  <p class="menu-item-description">
+SPICY TUNA ROLL, SALMON AVOCADO ROLL, PATRIOTS SPECIAL ROLL, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+MONDAY BOAT
+</span><span class="menu-item-price">
+$22.25 
+</span></h3>  <p class="menu-item-description">
+FIREMAN SPECIAL ROLL (SPICY), 3 PCS OF CRABSTICK SUSHI, 2 PCS OF EEL SUSHI, SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TUESDAY BOAT
+</span><span class="menu-item-price">
+$30.75 
+</span></h3>  <p class="menu-item-description">
+BOSTON LOBSTER SPECIAL ROLL, 2 PCS OF UNI SUSHI, 2 PCS OF SALMON ROE SUSHI, SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+WEDNESDAY BOAT
+</span><span class="menu-item-price">
+$26.25 
+</span></h3>  <p class="menu-item-description">
+WAYSIDE SPECIAL ROLL (MILD SPICY), 3 PCS OF COOKED SHRIMP SASHIMI, 2 PCS OF SWEET SHRIMP SUSHI, SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+THURSDAY BOAT
+</span><span class="menu-item-price">
+$24.25 
+</span></h3>  <p class="menu-item-description">
+CHEF'S CHOICE OF SPECIAL TUNA ROLL (MILD SPICY), 3 PCS OF TUNA SUSHI, 3 PCS OF TUNA SASHIMI, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+FRIDAY BOAT
+</span><span class="menu-item-price">
+$24.25 
+</span></h3>  <p class="menu-item-description">
+CHEF'S CHOICE OF SPECIAL YELLOWTAIL ROLL, 3 PCS OF YELLOWTAIL SUSHI, 3 PCS OF YELLOWTAIL SASHIMI, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SATURDAY BOAT
+</span><span class="menu-item-price">
+$24.25 
+</span></h3>  <p class="menu-item-description">
+CHEF'S CHOICE OF SPECIAL SALMON ROLL, 3 PCS OF SALMON SUSHI, 3 PCS OF SALMON SASHIMI, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SUNDAY BOAT
+</span><span class="menu-item-price">
+$25.25 
+</span></h3>  <p class="menu-item-description">
+DRAGON ROLL, 2 PCS OF SCALLOP SUSHI, 2 PCS OF TORO SUSHI, AND SERVED WITH ONE MISO SOUP
+</p></div></div>
+
+
+        
+      </div>
+    </div>
+  </div></div>
+
+
+  
+  </body>
+
+ 
+
+  
+    </h1>
+
+<center>
+  <div class="container2">
+     <br>
+    
+  TEL   (508) 573-1732  <br>
+1009 Boston Post Rd. E, Marlborough MA 01752
+<br>
+<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+
+</div>
+  
+
+    
+    
+     
+
+   
+
+    
+    
+     
+
+
+
+      
+    
+
+  
+</html>

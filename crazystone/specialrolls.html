@@ -1,0 +1,556 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    </head>  
+   <style>
+
+   .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.container2 {
+  
+  border-radius: 2px;
+  background-color:white;
+  width: 80%;
+  padding: 20px;
+}
+.fa {
+  padding:10px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+    margin: 5px 2px;
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color:white;
+  color: black;
+}
+.fa-instagram {
+  background-color: white;
+  color:black;
+}
+.fa-yelp {
+  background: white;
+  color: black;
+}
+
+/*.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}*/
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+    padding-top: 1em;
+        font-size: 20px;
+                      
+
+
+
+
+  
+ text-align: left;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 2;
+ 
+  margin-left: 0;
+  margin-top: 0;
+    margin-bottom: 5;
+
+  margin-right: 90;
+ 
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+        p {
+         margin: 35px 150px;
+         }
+
+
+
+          body{
+
+            font-family: 'Encode sans Condensed', sansserif;
+            color:black;
+            font-size: 14px;
+            letter-spacing: 2px;
+            max-width: 100%;
+            overflow-x: hidden;
+            margin:0;
+            text-align: center;
+            }
+
+       header {
+          display:inline;
+                      color:black;
+
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: 'Rock Salt', cursive;
+          }
+     
+      
+
+
+     
+
+     
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+     background-color: #F0F0F0;
+
+
+    }
+
+ 
+
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+
+            
+          
+
+
+
+
+
+       li.d {
+        text-decoration: none;
+        
+
+        display: inline-block;
+         float: right;
+         border-right:1px solid #bbb;
+         line-height: 0.2;
+         margin: 12px 0px; 
+
+        color: #111;
+        text-align: right;
+        padding: 15px 20px;
+       
+        font-family: 'Encode sans Condensed', sansserif;
+        font-size: 13px;
+        letter-spacing: 10px;
+        }
+         
+       li.c {
+
+
+        display: inline;
+        display: block;
+        color: #111;
+        text-align: left;
+       
+
+        
+        padding: 5px 20px;
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-family: 'Rock Salt', cursive;
+        }
+        
+        li a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        li a.active {
+            text-decoration: underline;
+            }
+       
+
+
+  
+      li a:hover {
+          
+          text-decoration: underline;}
+
+nav a {
+  
+  display: inline-block;
+  display:center;
+text-align:center;
+ font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 7px;
+  color: #111;
+  padding: 15px 20px;
+  font-size: 15px;
+  margin:5;
+
+}
+
+
+     nav a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+nav a.active {
+               font-weight: bolder;
+               
+            }
+
+  
+     nav a:hover {
+          
+          text-decoration: none;}
+
+h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 40px auto 50px auto; /* keep the table centered */
+    padding:10px;font-size:13px;background-color:#c4c4c4;color:#ffffff;
+    width:90%;
+    color:black;
+    display:center;
+}
+          
+
+        
+
+      
+
+        
+
+
+   </style>
+ 
+ <ul>
+  
+ <li class="c"><a href="C:\Users\Carolina\Downloads\crazystone.html">Crazy Stone</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\location.html">LOCATION</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\hours.html">HOURS</a></li> 
+  <li class="d"><a href="C:\Users\Carolina\Downloads\orderonline.html">ORDER ONLINE</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\reservations.html">RESERVATIONS</a></li>
+  <li class="d"><a class="active" href="C:\Users\Carolina\Downloads\menu.html">MENU</a></li>
+   
+   
+    
+  
+  </ul>
+  <body>
+  <h1>
+  <header>
+  Menu
+  </header>
+  <nav>
+  <a href="C:\Users\Carolina\Downloads\menu.html">Appetizers</a> 
+  <a href="C:\Users\Carolina\Downloads\soupandsalad.html">Soup&Salad</a> 
+  <a href="C:\Users\Carolina\Downloads\sushisashimi.html">Sushi&Sashimi</a> 
+  <a href="C:\Users\Carolina\Downloads\classicrolls.html">Classic Rolls</a>
+  <a class='active'href="C:\Users\Carolina\Downloads\specialrolls.html">Special Rolls</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\sushientrees.html">Sushi Entrees</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\classicentrees.html">Classic Entrees</a>
+    <a href="C:\Users\Carolina\Downloads\stoneentrees.html">Stone Entrees</a>
+
+  <a class="item" href="C:\Users\Carolina\Downloads\johnsspecials.html">John's Specials'</a>
+</nav>
+<div class="container">
+    <div class="menu">
+
+
+      <h2 class="menu-group-heading">
+       Special Rolls
+      </h2>
+
+
+      <div class="menu-group">
+ <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+FISH CAKE
+</span><span class="menu-item-price">
+$14.75 
+</span></h3>  <p class="menu-item-description">
+(No Seaweed) Spicy tuna, salmon, eel, avocado, eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CRYSTAL QUEEN
+</span><span class="menu-item-price">
+$14.25 
+</span></h3>  <p class="menu-item-description">
+Fried kani, shrimp tempura, avocado, soy wrapper, topped w. blue crabmeat, spicy mayo, and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+GREED GARDEN
+</span><span class="menu-item-price">
+$12.25 
+</span></h3>  <p class="menu-item-description">
+Tempura sweet potato and avocado inside, topped w. sesame seeds and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+COCO SHRIMP
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Shrimp tempura, avocado, cucumber, soy wrapper, topped w. salmon, tuna, escolar, served w. sweet chili, honey wasabi sauce, and coconut flakes
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+KISS ME
+</span><span class="menu-item-price">
+$13.95 
+</span></h3>  <p class="menu-item-description">
+Black pepper tuna and asparagus inside, topped w. striped bass, cilantro, and spicy sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TUNA’S LOVER (NO RICE)
+</span><span class="menu-item-price">
+$15.25 
+</span></h3>  <p class="menu-item-description">
+No rice, spicy tuna, salmon and avocado wrapped by sliced tuna, topped w. seaweed salad, served w. ponzu and spicy sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+OUT OF CONTROL
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna, spicy yellowtail and crunchy inside, topped w. spicy imitation crabmeat
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+PERFECT MATCH ROLL
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Tempura avocado and spicy yellowtail inside, topped w. seared escolar, mango, and homemade mango sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SUNSHINE ROLL
+</span><span class="menu-item-price">
+$14.25 
+</span></h3>  <p class="menu-item-description">
+Cooked shrimp, avocado, crunchy and spicy mayo inside, topped with salmon, sliced fresh lemon, and salmon roe
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+BLACK JACK ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Tempura spicy tuna roll, topped w. a mix of cilantro, onion, lobster salad and tobiko, served w. sweet chili sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY TUNA
+</span><span class="menu-item-price">
+$14.75 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+NEW YORK ROLL
+</span><span class="menu-item-price">
+$13.95 
+</span></h3>  <p class="menu-item-description">
+Kani, avocado, and cream cheese tempura roll, topped w. spicy kani and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+FRIDAY ROLL
+</span><span class="menu-item-price">
+$12.25 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna and cooked shrimp inside, topped w. avocado, tempura kani and tempura escolar, served w. sweet chili and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+S-FIGURE ROLL
+</span><span class="menu-item-price">
+$18.75 
+</span></h3>  <p class="menu-item-description">
+Shrimp tempura, avocado, cream cheese, soy wrapper, topped w. spicy kani, spicy mayo, and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+OKAY ROLL
+</span><span class="menu-item-price">
+$19.25 
+</span></h3>  <p class="menu-item-description">
+Lobster tempura, avocado, salmon wrapped by soy paper, topped w. lobster salad, spicy mayo, and eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+BOSTON LOBSTER ROLL
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Steamed lobster tail, lobster salad, and fresh mango wrapped by soy paper, topped w. homemade mango sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+HOT GIRL ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna, avocado, soy wrapper, topped w. bluefin tuna, salmon, and escolar, served w. spicy mayo and honey wasabi
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+GREEN RIVER ROLL
+</span><span class="menu-item-price">
+$13.95 
+</span></h3>  <p class="menu-item-description">
+Spicy salmon, crunchy, and avocado inside, topped w. seaweed salad, smoked salmon, and spicy sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPIDERMAN ROLL
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Tempura soft shell crab and cucumber inside, topped w. a mix of tuna, mango, avocado, and tobiko, served w. eel sauce and honey wasabi
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+PATRIOTS ROLL
+</span><span class="menu-item-price">
+$13.75 
+</span></h3>  <p class="menu-item-description">
+Tempura kani and shrimp inside, topped w. lobster salad, spicy tuna, spicy mayo, eel sauce, and tobiko
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+MAGICAL ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna and cucumber roll with smoked eel, cooked shrimp, avocado, and red tobiko on top
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+MIND ERASER ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Spicy kani and crunchy inside, topped w. yellowtail and jalapeno
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+WAYSIDE ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna, crunchy, and mango inside, topped w. spicy salmon, imitation crabmeat, and spicy mayo
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+FIREMAN ROLL
+</span><span class="menu-item-price">
+$13.25 
+</span></h3>  <p class="menu-item-description">
+Tempura roll contains tuna, salmon, cream cheese and escolar inside, topped w. masago, scallion, and spicy mayo
+</p></div></div>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+  </body>
+
+ 
+
+   </h1>
+
+<center>
+  <div class="container2">
+     <br>
+    
+  TEL   (508) 573-1732  <br>
+1009 Boston Post Rd. E, Marlborough MA 01752
+<br>
+<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+
+</div>
+  
+
+    
+    
+     
+
+   
+   
+
+    
+    
+     
+
+
+
+      
+    
+
+  
+</html>

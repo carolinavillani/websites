@@ -1,0 +1,590 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    </head>  
+   <style>
+
+   .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.container2 {
+  
+  border-radius: 2px;
+  background-color:white;
+  width: 80%;
+  padding: 20px;
+}
+.fa {
+  padding:10px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+    margin: 5px 2px;
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color:white;
+  color: black;
+}
+.fa-instagram {
+  background-color: white;
+  color:black;
+}
+.fa-yelp {
+  background: white;
+  color: black;
+}
+
+/*.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}*/
+
+.menu-group-heading {
+  margin: 0;
+  font-weight: bold;
+
+  padding-bottom: 0.5em;
+    padding-top: 0em;
+        font-size: 20px;
+
+
+  
+ text-align: left;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+.menu-item-other {
+  margin-right: 0em;
+  text-align: left;
+  padding-bottom: 3em;
+  padding-top: 0;
+          font-size: 11px;
+
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 2;
+ 
+  margin-left: 0;
+  margin-top: 0;
+    margin-bottom: 5;
+
+  margin-right: 90;
+ 
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+        p {
+         margin: 35px 150px;
+         }
+
+
+
+          body{
+
+            font-family: 'Encode sans Condensed', sansserif;
+            color:black;
+            font-size: 14px;
+            letter-spacing: 2px;
+            max-width: 100%;
+            overflow-x: hidden;
+            margin:0;
+            text-align: center;
+            }
+
+       header {
+          display:inline;
+                      color:black;
+
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: 'Rock Salt', cursive;
+          }
+     
+      
+
+
+     
+
+     
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+     background-color: #F0F0F0;
+
+
+    }
+
+ 
+
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+
+            
+          
+
+
+
+
+
+       li.d {
+        text-decoration: none;
+        
+
+        display: inline-block;
+         float: right;
+         border-right:1px solid #bbb;
+         line-height: 0.2;
+         margin: 12px 0px; 
+
+        color: #111;
+        text-align: right;
+        padding: 15px 20px;
+       
+        font-family: 'Encode sans Condensed', sansserif;
+        font-size: 13px;
+        letter-spacing: 10px;
+        }
+         
+       li.c {
+
+
+        display: inline;
+        display: block;
+        color: #111;
+        text-align: left;
+       
+
+        
+        padding: 5px 20px;
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-family: 'Rock Salt', cursive;
+        }
+        
+        li a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        li a.active {
+            text-decoration: underline;
+            }
+       
+
+
+  
+      li a:hover {
+          
+          text-decoration: underline;}
+
+
+nav a {
+  display: inline-block;
+  display:center;
+text-align:center;
+ font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 7px;
+  color: #111;
+  padding: 15px 20px;
+  font-size: 15px;
+  margin:5;
+
+}
+
+
+     nav a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+nav a.active {
+               font-weight: bolder;
+               
+            }
+
+  
+     nav a:hover {
+          
+          text-decoration: none;}
+
+h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 40px auto 50px auto; /* keep the table centered */
+    padding:10px;font-size:13px;background-color:#c4c4c4;color:#ffffff;
+    width:90%;
+    color:black;
+    display:center;
+}
+          
+
+        
+
+      
+
+        
+
+
+   </style>
+ 
+ <ul>
+  
+ <li class="c"><a href="C:\Users\Carolina\Downloads\crazystone.html">Crazy Stone</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\location.html">LOCATION</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\hours.html">HOURS</a></li> 
+  <li class="d"><a href="C:\Users\Carolina\Downloads\orderonline.html">ORDER ONLINE</a></li>
+  <li class="d"><a href="C:\Users\Carolina\Downloads\reservations.html">RESERVATIONS</a></li>
+  <li class="d"><a class="active" href="C:\Users\Carolina\Downloads\menu.html">MENU</a></li>
+   
+   
+    
+  
+  </ul>
+  <body>
+  <h1>
+  <header>
+  Menu
+  </header>
+  <nav>
+  <a href="C:\Users\Carolina\Downloads\menu.html">Appetizers</a> 
+  <a href="C:\Users\Carolina\Downloads\soupandsalad.html">Soup&Salad</a> 
+  <a href="C:\Users\Carolina\Downloads\sushisashimi.html">Sushi&Sashimi</a> 
+  <a class='active' href="C:\Users\Carolina\Downloads\classicrolls.html">Classic Rolls</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\specialrolls.html">Special Rolls</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\sushientrees.html">Sushi Entrees</a>
+  <a class="item" href="C:\Users\Carolina\Downloads\classicentrees.html">Classic Entrees</a>
+    <a href="C:\Users\Carolina\Downloads\stoneentrees.html">Stone Entrees</a>
+
+  <a class="item" href="C:\Users\Carolina\Downloads\johnsspecials.html">John's Specials'</a>
+</nav>
+<div class="container">
+    <div class="menu">
+
+
+      <div class="menu-group-heading">
+       Classic Rolls
+      </div>
+      <div class="menu-item-other">
+ Regular Roll (6 pcs) or 1 Hand Roll      </div>
+     
+
+
+
+
+      <div class="menu-group">
+      <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CUCUMBER
+</span><span class="menu-item-price">
+$4.75 
+</span></h3>  <p class="menu-item-description">
+Cucumber roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+AVOCADO
+</span><span class="menu-item-price">
+$4.75 
+</span></h3>  <p class="menu-item-description">
+Soy paper +$1, or Brown rice +$1
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+ASPARAGUS
+</span><span class="menu-item-price">
+$4.25 
+</span></h3>  <p class="menu-item-description">
+Soy paper +$1, or Brown rice +$1
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+OSHINKO
+</span><span class="menu-item-price">
+$4.95 
+</span></h3>  <p class="menu-item-description">
+Pickled vegetables
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+PEANUT AVOCADO
+</span><span class="menu-item-price">
+$5.75 
+</span></h3>  <p class="menu-item-description">
+Peanut avocado roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SWEET POTATO
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Sweet potato roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+TEMPURA VEGGIE
+</span><span class="menu-item-price">
+$7.95 
+</span></h3>  <p class="menu-item-description">
+Tempura veggie roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+FUTO MAKI
+</span><span class="menu-item-price">
+$6.25 
+</span></h3>  <p class="menu-item-description">
+Avocado
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+KANI
+</span><span class="menu-item-price">
+$6.25 
+</span></h3>  <p class="menu-item-description">
+Imitation crab meat, spicy or non-spicy
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+BLUEFIN TUNA
+</span><span class="menu-item-price">
+$6.75 
+</span></h3>  <p class="menu-item-description">
+Added with Avocado ($0.50) or Cucumber ($0.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY TUNA
+</span><span class="menu-item-price">
+$6.75 
+</span></h3>  <p class="menu-item-description">
+Spicy tuna roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SALMON
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Added w. Avocado ($0.50) or Cucumber ($0.50)
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SALMON ROLL
+</span><span class="menu-item-price">
+$7.95 
+</span></h3>  <p class="menu-item-description">
+Salmon skin roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+YELLOWTAIL
+</span><span class="menu-item-price">
+$6.25 
+</span></h3>  <p class="menu-item-description">
+Hamachi roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY SALMON
+</span><span class="menu-item-price">
+$6.75 
+</span></h3>  <p class="menu-item-description">
+Spicy salmon roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY YELLOWTAIL
+</span><span class="menu-item-price">
+$6.25 
+</span></h3>  <p class="menu-item-description">
+Spicy yellowtail roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+CALIFORNIA
+</span><span class="menu-item-price">
+$5.75 
+</span></h3>  <p class="menu-item-description">
+Avocado, cucumber, imitation crabmeat
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+PHILADELPHIA
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Smoked salmon, cream cheese, cucumber
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+ALASKAN
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Raw salmon, cucumber, avocado
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+COOKED SHRIMP AVOCADO
+</span><span class="menu-item-price">
+$5.25 
+</span></h3>  <p class="menu-item-description">
+Cooked shrimp avocado roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SCALLOP
+</span><span class="menu-item-price">
+$8.25 
+</span></h3>  <p class="menu-item-description">
+Scallop Roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY SCALLOP Spicy scallop roll
+</span><span class="menu-item-price">
+$8.75 
+</span></h3>  <p class="menu-item-description">
+
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SHRIMP TEMPURA
+</span><span class="menu-item-price">
+$8.25 
+</span></h3>  <p class="menu-item-description">
+Shrimp tempura roll
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPIDER
+</span><span class="menu-item-price">
+$11.75 
+</span></h3>  <p class="menu-item-description">
+Tempura soft shell crab, avocado, cucumber w. eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+DRAGON
+</span><span class="menu-item-price">
+$11.25 
+</span></h3>  <p class="menu-item-description">
+Smoked eel, avocado, cucumber w. eel sauce
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+RAINBOW
+</span><span class="menu-item-price">
+$12.25 
+</span></h3>  <p class="menu-item-description">
+Tuna, salmon, escolar, kani, cucumber, avocado wrapped in seaweed paper
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+EEL
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Add avocado or cucumber
+</p></div></div>
+<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
+SPICY BLUE CRABMEAT
+</span><span class="menu-item-price">
+$6.95 
+</span></h3>  <p class="menu-item-description">
+Spicy blue crabmeat roll
+</p></div></div>
+
+ 
+      </div>
+    </div>
+  </div>
+
+
+  
+  </body>
+
+ 
+</h1>
+
+<center>
+  <div class="container2">
+     <br>
+    
+  TEL   (508) 573-1732  <br>
+1009 Boston Post Rd. E, Marlborough MA 01752
+<br>
+<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+
+</div>
+  
+  
+   
+   
+
+    
+    
+     
+
+
+
+      
+    
+
+  
+</html>
