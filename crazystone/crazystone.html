@@ -1,396 +1,379 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
-      
-   <style>
-
-   .container {
-  position: relative;
-  width: 100%;
-}
-.container2 {
-  
-  border-radius: 2px;
-  background-color:white;
-  width: 80%;
-  padding: 0px;
-}
-.fa {
-  padding:10px;
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-    margin: 5px 2px;
-
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background-color:white;
-  color: black;
-}
-.fa-instagram {
-  background-color: white;
-  color:black;
-}
-.fa-yelp {
-  background: white;
-  color: black;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-
-.image {
-  opacity: 1;
- 
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-}
-
-
-
-.container:hover .image {
-  opacity: 0.5;
-  background-color: BLACK;
-  color: black;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  
-  color: black;
-  
-  font-size: 16px;
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 100;
-}
-
-
-
-
-
-
-       img {
-                overflow:hidden; 
-                width: 100%;
-                margin:0;
-                background: linear-gradient(360deg, rgba(20, 20, 20, 0.7) -4.15%, rgba(0, 0, 0, 0.105) 21.26%);
-                }
-            
-* {box-sizing: border-box}
-
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background: black;
-} 
-
-/* Slides */
-.mySlides {
-  display: none;
-  
-  text-align: center;
-}        
-
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-
-
-/* The dots/bullets/indicators */
-.dot {
-text-align:center;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-
-  transition: background-color 0.6s ease;
-}
-
- /*Add a background color to the active dot/circle 
-.active, .dot:hover {
-  background-color:#982C2E;
-}
-*/
-
-            .column {
-              float: left;
-              /*width: 33.33%;*/
-              padding: 0px;
-            }
-
-
-             Clearfix (clear floats) 
-            .row::after {
-              content: " ";
-              clear: both;
-              display: table;
-            }
-        p {
-         margin: 35px 150px;
-         }
-
-       body{
-
-            font-family: 'Encode sans Condensed', sansserif;
-            font-size: 14px;
-            letter-spacing: 7px;
-            max-width: 100%;
-            overflow-x: hidden;
-            margin:0;
-            text-align: center;
-            }
-
-       header {
-          display:inline;
-          font-size: 30px;
-          letter-spacing: 1px;
-          font-family: 'Rock Salt', cursive;
-          }
-     
-   
-     
-
-     
- ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-     background-color: #F0F0F0;
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
     }
 
- 
-li a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
- 
-  text-decoration: none;
-}
+    .container2 {
 
-            
-          
+      border-radius: 2px;
+      background-color: white;
+      width: 80%;
+      padding: 0px;
+    }
+
+    .fa {
+      padding: 10px;
+      font-size: 25px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background-color: white;
+      color: black;
+    }
+
+    .fa-instagram {
+      background-color: white;
+      color: black;
+    }
+
+    .fa-yelp {
+      background: white;
+      color: black;
+    }
 
 
 
+    .image {
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+    }
 
 
-        li.d {
-        text-decoration: none;
-        
 
-        display: inline-block;
-         float: right;
-         border-right:1px solid #bbb;
-         line-height: 0.2;
-         margin: 12px 0px; 
-
-        color: #111;
-        text-align: right;
-        padding: 15px 20px;
-       
-        font-family: 'Encode sans Condensed', sansserif;
-        font-size: 13px;
-        letter-spacing: 10px;
-        }
-
-       li.c {
+    .container:hover .image {
+      opacity: 0.5;
+      background-color: BLACK;
+      color: black;
+    }
 
 
-        display: inline;
-        display: block;
-        color: #111;
-        text-align: left;
-       
+    .container:hover .middle {
+      opacity: 1;
+    }
 
-        
-        padding: 5px 20px;
-        text-decoration: none;
-        font-size: 30px;
-        letter-spacing: 1px;
-        font-family: 'Rock Salt', cursive;
-        }
-        
-        li a:hover:not(.active) {
-            text-decoration: underline;
-        }
+    /*overlay text on food images*/
+    .text {
+      color: black;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 100;
+    }
 
-        
-       
 
+/*main background image formatting*/
+    img {
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      background: linear-gradient(360deg, rgba(20, 20, 20, 0.7) -4.15%, rgba(0, 0, 0, 0.105) 21.26%);
+    }
 
   
-      li a:hover {
-          
-          text-decoration: none;}
 
-        
+    /* The dots/bullets/indicators */
+    .dot {
+      text-align: center;
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+
+      transition: background-color 0.6s ease;
+    }
+/*text about crazy stone formatting*/
+    p {
+      margin: 35px 150px;
+    }
+
+    body {
+
+      font-family: 'Encode sans Condensed', sansserif;
+      font-size: 14px;
+      letter-spacing: 7px;
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      text-align: center;
+    }
+
+/*to leave main logo un-underlined when active*/
+    li a.active {
+      text-decoration: none;
+    }
+
+    li a.active:hover {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
 
 
-   </style>
- </head>
+<ul>
 
- 
- <ul>
-  
   <li class="c"><a class="active" href="crazystone.html">Crazy Stone</a></li>
   <li class="d"><a href="location.html">LOCATION</a></li>
-  <li class="d"><a href="hours.html">HOURS</a></li> 
+  <li class="d"><a href="hours.html">HOURS</a></li>
   <li class="d"><a href="orderonline.html">ORDER ONLINE</a></li>
   <li class="d"><a href="reservations.html">RESERVATIONS</a></li>
   <li class="d"><a href="menu.html">MENU</a></li>
-   
-    
-  
-  </ul>
 
-  <body>
- <div>
-    <img src=" main image crazy stone.png" alt="Shay Howe">
-   
+
+
+</ul>
+
+<body>
+  <div>
+    <img src=" photos/main image crazy stone.png" alt="background-image">
+
     <p>
 
-    At Crazy Stone, we specialize in hot stone entrees and innovative sushi dishes with fish sourced directly from Hokkaido, Japan.</p></div>
- <div class="owl-carousel owl-theme">
-    <div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image1.png" alt="Snow" style="width:100%"class="image" ><div class="text"><div class="middle">
-         CHU TORO & TRUFFLE</div></div></div></div></div></div>
-    <div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image2.png" alt="Snow" style="width:100%" class="image" ><div class="text"><div class="middle">
-         HOKKAIDO UNI</div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image3.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         HAMACHI NIGIRI SPECIAL</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image4.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         STEAK STONE ENTREE</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image5.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         TWIN LOBSTER TAIL STONE ENTREE</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image6.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         N.Y STEAK HIBACHI</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image7.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-        ICE BREAKER COMBO</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image8.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         COCO SHRIMP ROLL</div></div></div></div></div></div></div>
-    <div class="item"><div class="item"><div class="row"> 
-     
-         <div class="column"><div class="container">
-         <img src="image9.png" alt="Snow" style="width 100%" class="image" ><div class="text"><div class="middle">
-         SPICY SQUID</div></div></div></div></div></div></div>
-    
-</div>
+      At Crazy Stone, we specialize in hot stone entrees and innovative sushi dishes with fish sourced directly from
+      Hokkaido, Japan.</p>
+  </div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img src="photos/chu-toro-and-truffle.png" alt="chu-toro-and-truffle" style="width:100%" class="image">
+            <div class="text">
+              <div class="middle">
+                CHU TORO & TRUFFLE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img src="photos/hokkaido-uni.png" alt="hokkaido-uni" style="width:100%" class="image">
+            <div class="text">
+              <div class="middle">
+                HOKKAIDO UNI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/hamachi-nigiri-special.png" alt="hamachi-nigiri-special" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  HAMACHI NIGIRI SPECIAL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/steak-stone-entree.png" alt="steak-stone-entree" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  STEAK STONE ENTREE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/twin-lobster-tail-stone-entree.png" alt="twin-lobster-tail-stone-entree" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  TWIN LOBSTER TAIL STONE ENTREE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/NY-steak-hibachi.png" alt="NY-steak-hibachi" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  N.Y STEAK HIBACHI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/ice-breaker-combo.png" alt="ice-breaker-combo" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  ICE BREAKER COMBO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/coco-shrimp-roll.png" alt="coco-shrimp-roll" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  COCO SHRIMP ROLL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item">
+        <div class="row">
+
+          <div class="column">
+            <div class="container">
+              <img src="photos/spicy-squid.png" alt="spicy-squid" style="width:100%" class="image">
+              <div class="text">
+                <div class="middle">
+                  SPICY SQUID</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-   
 
-     
+
+
   <script type="text/javascript">
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
         },
-        500:{
-            items:3
+        500: {
+          items: 3
         },
-        
-    }
-})</script>
+
+      }
+    })</script>
 
 
-&nbsp;
+  &nbsp;
 
- 
-</h1>
 
-&nbsp;
-&nbsp;
-<br>
-<br>
-<center><p>
-  <div class="container2">
-     <br>
-    
-  TEL   (508) 573-1732  <br>
-1009 Boston Post Rd. E, Marlborough MA 01752
-<br>
-<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+  </h1>
 
-</div>
-</p>
-  </body>
+  &nbsp;
+  &nbsp;
+  <br>
+  <br>
+  <center>
+    <p>
+    <div class="container2">
+      <br>
+
+      TEL (508) 573-1732 <br>
+      1009 Boston Post Rd. E, Marlborough MA 01752
+      <br>
+      <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+
+    </div>
+    </p>
+    </center>
+</body>
+
 </html>

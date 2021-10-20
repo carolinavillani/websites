@@ -1,311 +1,106 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
-    </head>  
-   <style>
-
-   .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5em;
-}
-.container2 {
-  
-  border-radius: 2px;
-  background-color:white;
-  width: 80%;
-  padding: 20px;
-}
-.fa {
-  padding:10px;
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-    margin: 5px 2px;
-
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background-color:white;
-  color: black;
-}
-.fa-instagram {
-  background-color: white;
-  color:black;
-}
-.fa-yelp {
-  background: white;
-  color: black;
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-/*.menu {
-   font-family: 'Encode sans Condensed', sansserif;
-            color:black;
-            font-size: 14px;
-            letter-spacing: 9px;
-            max-width: 100%;
-            overflow-x: hidden;
-            margin:0;
-            text-align: center;
-}*/
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/menu-nav-bar.css">
+  <link rel="stylesheet" href="css/footer.css">
 
-.menu-group-heading {
-  margin: 0;
-  
-  padding-bottom: 1em;
+</head>
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+
+  .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
     padding-top: 1em;
     font-size: 20px;
-
-  
- text-align: left;
-}
-
-.menu-group {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  padding: 1.5em 0;
-}
-
-.menu-item {
-  display: flex;
-}
-
-.menu-item-image {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  object-fit: cover;
-  margin-right: 1.5em;
-}
-
-.menu-item-text {
-  flex-grow: 1;
-}
-
-.menu-item-heading {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.menu-item-name {
-  margin-right: 1.5em;
-}
-
-.menu-item-description {
-  line-height: 2;
- 
-  margin-left: 0;
-  margin-top: 0;
-    margin-bottom: 5;
-
-  margin-right: 90;
- 
-  text-align: left;
-}
-
-@media screen and (min-width: 992px) {
-  .menu {
-    font-size: 12px;
+    text-align: left;
   }
 
   .menu-group {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
   }
 
-  .menu-item-image {
-    width: 125px;
-    height: 125px;
+  .menu-item {
+    display: flex;
   }
-}
 
+  .menu-item-text {
+    flex-grow: 1;
+  }
 
-        p {
-         margin: 35px 150px;
-         }
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
 
+  .menu-item-description {
+    line-height: 2;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 5;
+    margin-right: 90;
+    text-align: left;
+  }
 
-          body{
-
-            font-family: 'Encode sans Condensed', sansserif;
-            color:black;
-            font-size: 14px;
-            letter-spacing: 2px;
-            max-width: 100%;
-            overflow-x: hidden;
-            margin:0;
-            text-align: center;
-            }
-
-       header {
-          display:inline;
-                      color:black;
-
-          font-size: 20px;
-          letter-spacing: 1px;
-          font-family: 'Rock Salt', cursive;
-          }
-     
-      
-
-
-     
-
-     
- ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-     background-color: #F0F0F0;
-
-
+  @media screen and (min-width: 992px) {
+    .menu {
+      font-size: 12px;
     }
 
- 
+    .menu-group {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
 
 
-li a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
- 
-  text-decoration: none;
-}
+  body {
 
-            
-          
+    font-family: 'Encode sans Condensed', sansserif;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 2px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+  }
+</style>
 
+<ul>
 
-
-
-
-       li.d {
-        text-decoration: none;
-        
-
-        display: inline-block;
-         float: right;
-         border-right:1px solid #bbb;
-         line-height: 0.2;
-         margin: 12px 0px; 
-
-        color: #111;
-        text-align: right;
-        padding: 15px 20px;
-       
-        font-family: 'Encode sans Condensed', sansserif;
-        font-size: 13px;
-        letter-spacing: 10px;
-        }
-         
-       li.c {
-
-
-        display: inline;
-        display: block;
-        color: #111;
-        text-align: left;
-       
-
-        
-        padding: 5px 20px;
-        text-decoration: none;
-        font-size: 30px;
-        letter-spacing: 1px;
-        font-family: 'Rock Salt', cursive;
-        }
-        
-        li a:hover:not(.active) {
-            text-decoration: underline;
-        }
-
-        li a.active {
-            text-decoration: underline;
-            }
-       
-
-
-  
-      li a:hover {
-          
-          text-decoration: underline;}
-
-
-nav a {
-  
-   display: inline-block;
-  display:center;
-text-align:center;
- font-weight: 100;
-  text-decoration: none;
-  letter-spacing: 7px;
-  color: #111;
-  padding: 15px 20px;
-  font-size: 15px;
-  margin:5;
-}
-
-
-     nav a:hover:not(.active) {
-            text-decoration: underline;
-        }
-
-nav a.active {
-               font-weight: bolder;
-               
-            }
-
-  
-     nav a:hover {
-          
-          text-decoration: none;}
-
-h1 {
-    display: table; /* keep the background color wrapped tight */
-    margin: 40px auto 50px auto; /* keep the table centered */
-    padding:10px;font-size:13px;background-color:#c4c4c4;color:#ffffff;
-    width:90%;
-    color:black;
-    display:center;
-}
-          
-
-        
-
-      
-
-        
-
-
-   </style>
- 
- <ul>
-  
 
   <li class="c"><a href="crazystone.html">Crazy Stone</a></li>
   <li class="d"><a href="location.html">LOCATION</a></li>
@@ -313,243 +108,364 @@ h1 {
   <li class="d"><a href="orderonline.html">ORDER ONLINE</a></li>
   <li class="d"><a href="reservations.html">RESERVATIONS</a></li>
   <li class="d"><a class="active" href="menu.html">MENU</a></li>
-    
-  
-  </ul>
-  <body>
-  <h1>
-  <header>
-  Menu
-  </header>
-  <nav>
-  <a class='active' href="menu.html">Appetizers</a> 
-  <a href="soupandsalad.html">Soup&Salad</a> 
-  <a href="sushisashimi.html">Sushi&Sashimi</a> 
-  <a class="item" href="classicrolls.html">Classic Rolls</a>
-  <a class="item" href="specialrolls.html">Special Rolls</a>
-  <a class="item" href="sushientrees.html">Sushi Entrees</a>
-  <a class="item" href="classicentrees.html">Classic Entrees</a>
-    <a href="stoneentrees.html">Stone Entrees</a>
-
-  <a class="item" href="johnsspecials.html">John's Specials'</a>
-</nav>
-<div class="container">
-    <div class="menu">
 
 
-      <h2 class="menu-group-heading">
-       Appetizers
-      </h2>
+</ul>
+
+<body>
+  <div class="menubox">
+    <header>
+      <h1>
+        Menu
+      </h1>
+    </header>
+    <nav>
+      <a class='active' href="menu.html">Appetizers</a>
+      <a href="soupandsalad.html">Soup&Salad</a>
+      <a href="sushisashimi.html">Sushi&Sashimi</a>
+      <a class="item" href="classicrolls.html">Classic Rolls</a>
+      <a class="item" href="specialrolls.html">Special Rolls</a>
+      <a class="item" href="sushientrees.html">Sushi Entrees</a>
+      <a class="item" href="classicentrees.html">Classic Entrees</a>
+      <a href="stoneentrees.html">Stone Entrees</a>
+
+      <a class="item" href="johnsspecials.html">John's Specials'</a>
+    </nav>
+    <div class="container">
+      <div class="menu">
 
 
-      <div class="menu-group">
-        <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-MONEY BAG (5PCS)
-</span><span class="menu-item-price">
-$7.95 
-</span></h3>  <p class="menu-item-description">
-Spicy salmon, spicy kani and cream cheese wrapped in deeply fried wonton skin, served with guacamole and sweet chili sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-EDAMAME
-</span><span class="menu-item-price">
-$6.25 
-</span></h3>  <p class="menu-item-description">
-Steamed green soybeans
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-PORK GYOZA (6PCS)
-</span><span class="menu-item-price">
-$6.25 
-</span></h3>  <p class="menu-item-description">
-Pan fried dumpling with pork
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-VEGETABLE GYOZA (6PCS)
-</span><span class="menu-item-price">
-$6.25 
-</span></h3>  <p class="menu-item-description">
-Pan fried dumpling with vegetables
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-HARU MAKI (2PCS)
-</span><span class="menu-item-price">
-$6.25 
-</span></h3>  <p class="menu-item-description">
-Deep fried Japanese spring rolls
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SHUMAI (6PCS)
-</span><span class="menu-item-price">
-$8.25 
-</span></h3>  <p class="menu-item-description">
-Shrimp dim sum
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SPICY SQUID
-</span><span class="menu-item-price">
-$7.75 
-</span></h3>  <p class="menu-item-description">
-Baked squid w. homemade spicy sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SALT PEPPER CHICKEN
-</span><span class="menu-item-price">
-$6.75 
-</span></h3>  <p class="menu-item-description">
-Fried chicken ball
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-AGEDASHI TOFU
-</span><span class="menu-item-price">
-$9.25 
-</span></h3>  <p class="menu-item-description">
-Fried tofu served in tempura sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-IKA MARU
-</span><span class="menu-item-price">
-$9.25 
-</span></h3>  <p class="menu-item-description">
-Grilled squid with teriyaki sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-COCONUT SHRIMP APPETIZER(5PCS)
-</span><span class="menu-item-price">
-$8.25 
-</span></h3>  <p class="menu-item-description">
-Jumbo shrimp rolled in an combination of coconut flakes, spices and bread crumbs for baking, served w. coconut dipping
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-CHICKEN KATSU APPETIZER
-</span><span class="menu-item-price">
-$8.25 
-</span></h3>  <p class="menu-item-description">
-Crispy chicken breast w. special katsu dipping sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SHRIMP TEMPURA APPETIZER
-</span><span class="menu-item-price">
-$7.95 
-</span></h3>  <p class="menu-item-description">
-2 pieces of shrimp tempura with mixed tempura vegetables
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-CHICKEN TEMPURA APPETIZER
-</span><span class="menu-item-price">
-$7.25 
-</span></h3>  <p class="menu-item-description">
-2 pieces of tempura chicken with mixed tempura vegetables
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-MIXED VEGGIE TEMPURA APPETIZER
-</span><span class="menu-item-price">
-$7.95 
-</span></h3>  <p class="menu-item-description">
-Mixed tempura vegetables
-</p></div></div>
+        <h2 class="menu-group-heading">
+          Appetizers
+        </h2>
 
-      
 
-      <h2 class="menu-group-heading">
-        SUSHI APPETIZERS
-      </h2>
-      <div class="menu-group">
-      <div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-KATHY'S SPECIAL
-</span><span class="menu-item-price">
-$10.25 
-</span></h3>  <p class="menu-item-description">
-Seared tuna, spicy tuna and avocado with chef’s sauce, sliced red pepper on top
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-BLACK PEPPER TUNA
-</span><span class="menu-item-price">
-$10.75 
-</span></h3>  <p class="menu-item-description">
-Seared black pepper tuna served w. special ponzu sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-NIGIRI APPETIZER (5 PCS)
-</span><span class="menu-item-price">
-$10.75 
-</span></h3>  <p class="menu-item-description">
-Tuna, salmon, yellowtail, escolar & cooked shrimp
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SASHIMI APPETIZER (7 PCS)
-</span><span class="menu-item-price">
-$12.25 
-</span></h3>  <p class="menu-item-description">
-Tuna, salmon, yellowtail, striped bass or escolar
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-SALMON DREAM (4 PCS)
-</span><span class="menu-item-price">
-$10.25 
-</span></h3>  <p class="menu-item-description">
-Lobster salad wrapped by the sliced salmon, serving w. chef’s special sauce
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-ESCOLAR TATAKI
-</span><span class="menu-item-price">
-$10.25 
-</span></h3>  <p class="menu-item-description">
-Seared sliced escolar with homemade ponzu dressing
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-TUNA TATAKI
-</span><span class="menu-item-price">
-$10.75 
-</span></h3>  <p class="menu-item-description">
-Seared sliced tuna with homemade ponzu dressing
-</p></div></div>
-<div class="menu-item"><div class="menu-item-text"> <h3 class="menu-item-heading"> <span class="menu-item-name">
-YELLOWTAIL JALAPENO
-</span><span class="menu-item-price">
-$10.75 
-</span></h3>  <p class="menu-item-description">
-Yellowtail in wasabi and ponzu sauce topped with jalapeno
-</p></div></div>
-        
+        <div class="menu-group">
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  MONEY BAG (5PCS)
+                </span><span class="menu-item-price">
+                  $7.95
+                </span></h3>
+              <p class="menu-item-description">
+                Spicy salmon, spicy kani and cream cheese wrapped in deeply fried wonton skin, served with guacamole and
+                sweet chili sauce
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  EDAMAME
+                </span><span class="menu-item-price">
+                  $6.25
+                </span></h3>
+              <p class="menu-item-description">
+                Steamed green soybeans
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  PORK GYOZA (6PCS)
+                </span><span class="menu-item-price">
+                  $6.25
+                </span></h3>
+              <p class="menu-item-description">
+                Pan fried dumpling with pork
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  VEGETABLE GYOZA (6PCS)
+                </span><span class="menu-item-price">
+                  $6.25
+                </span></h3>
+              <p class="menu-item-description">
+                Pan fried dumpling with vegetables
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  HARU MAKI (2PCS)
+                </span><span class="menu-item-price">
+                  $6.25
+                </span></h3>
+              <p class="menu-item-description">
+                Deep fried Japanese spring rolls
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  SHUMAI (6PCS)
+                </span><span class="menu-item-price">
+                  $8.25
+                </span></h3>
+              <p class="menu-item-description">
+                Shrimp dim sum
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  SPICY SQUID
+                </span><span class="menu-item-price">
+                  $7.75
+                </span></h3>
+              <p class="menu-item-description">
+                Baked squid w. homemade spicy sauce
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  SALT PEPPER CHICKEN
+                </span><span class="menu-item-price">
+                  $6.75
+                </span></h3>
+              <p class="menu-item-description">
+                Fried chicken ball
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  AGEDASHI TOFU
+                </span><span class="menu-item-price">
+                  $9.25
+                </span></h3>
+              <p class="menu-item-description">
+                Fried tofu served in tempura sauce
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  IKA MARU
+                </span><span class="menu-item-price">
+                  $9.25
+                </span></h3>
+              <p class="menu-item-description">
+                Grilled squid with teriyaki sauce
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  COCONUT SHRIMP APPETIZER(5PCS)
+                </span><span class="menu-item-price">
+                  $8.25
+                </span></h3>
+              <p class="menu-item-description">
+                Jumbo shrimp rolled in an combination of coconut flakes, spices and bread crumbs for baking, served w.
+                coconut dipping
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  CHICKEN KATSU APPETIZER
+                </span><span class="menu-item-price">
+                  $8.25
+                </span></h3>
+              <p class="menu-item-description">
+                Crispy chicken breast w. special katsu dipping sauce
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  SHRIMP TEMPURA APPETIZER
+                </span><span class="menu-item-price">
+                  $7.95
+                </span></h3>
+              <p class="menu-item-description">
+                2 pieces of shrimp tempura with mixed tempura vegetables
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  CHICKEN TEMPURA APPETIZER
+                </span><span class="menu-item-price">
+                  $7.25
+                </span></h3>
+              <p class="menu-item-description">
+                2 pieces of tempura chicken with mixed tempura vegetables
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading"> <span class="menu-item-name">
+                  MIXED VEGGIE TEMPURA APPETIZER
+                </span><span class="menu-item-price">
+                  $7.95
+                </span></h3>
+              <p class="menu-item-description">
+                Mixed tempura vegetables
+              </p>
+            </div>
+          </div>
+
+
+
+          <h2 class="menu-group-heading">
+            SUSHI APPETIZERS
+          </h2>
+          <div class="menu-group">
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    KATHY'S SPECIAL
+                  </span><span class="menu-item-price">
+                    $10.25
+                  </span></h3>
+                <p class="menu-item-description">
+                  Seared tuna, spicy tuna and avocado with chef’s sauce, sliced red pepper on top
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    BLACK PEPPER TUNA
+                  </span><span class="menu-item-price">
+                    $10.75
+                  </span></h3>
+                <p class="menu-item-description">
+                  Seared black pepper tuna served w. special ponzu sauce
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    NIGIRI APPETIZER (5 PCS)
+                  </span><span class="menu-item-price">
+                    $10.75
+                  </span></h3>
+                <p class="menu-item-description">
+                  Tuna, salmon, yellowtail, escolar & cooked shrimp
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    SASHIMI APPETIZER (7 PCS)
+                  </span><span class="menu-item-price">
+                    $12.25
+                  </span></h3>
+                <p class="menu-item-description">
+                  Tuna, salmon, yellowtail, striped bass or escolar
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    SALMON DREAM (4 PCS)
+                  </span><span class="menu-item-price">
+                    $10.25
+                  </span></h3>
+                <p class="menu-item-description">
+                  Lobster salad wrapped by the sliced salmon, serving w. chef’s special sauce
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    ESCOLAR TATAKI
+                  </span><span class="menu-item-price">
+                    $10.25
+                  </span></h3>
+                <p class="menu-item-description">
+                  Seared sliced escolar with homemade ponzu dressing
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    TUNA TATAKI
+                  </span><span class="menu-item-price">
+                    $10.75
+                  </span></h3>
+                <p class="menu-item-description">
+                  Seared sliced tuna with homemade ponzu dressing
+                </p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    YELLOWTAIL JALAPENO
+                  </span><span class="menu-item-price">
+                    $10.75
+                  </span></h3>
+                <p class="menu-item-description">
+                  Yellowtail in wasabi and ponzu sauce topped with jalapeno
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  
- 
+  </div>
+      
 
-  
-  </body>
 
-</h1>
+
+
+</body>
+
+
 
 <center>
-  <div class="container2">
-     <br>
-    
-  TEL   (508) 573-1732  <br>
-1009 Boston Post Rd. E, Marlborough MA 01752
-<br>
-<a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+  <div class="footer">
 
-</div>
+    TEL (508) 573-1732 <br>
+    1009 Boston Post Rd. E, Marlborough MA 01752
+    <br>
+    <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
 
- 
-
-  
-   
- </center>  
-
-    
-    
-     
+  </div>
 
 
 
-      
-    
 
-  
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
 </html>
