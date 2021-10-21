@@ -1,42 +1,38 @@
 .carouselcontainer {
-    position: relative;
-    width: 100%;
-  }
+  position: relative;
+  width: 100%;
+}
 
+.foodcarouselimage {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 0.9s ease;
+  backface-visibility: hidden;
+}
 
-  .foodcarouselimage {
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    transition: 0.9s ease;
-    backface-visibility: hidden;
-  }
+.hoverfooddescription {
+  transition: 0.5s ease;
+  opacity: 0;
+}
 
-  .hoverfooddescription {
-    transition: .5s ease;
-    opacity: 0;
-  }
+.carouselcontainer:hover .foodcarouselimage {
+  opacity: 0.5;
+  background-color: BLACK;
+  color: black;
+}
 
+.carouselcontainer:hover .hoverfooddescription {
+  opacity: 1;
+}
 
-
-  .carouselcontainer:hover .foodcarouselimage {
-    opacity: 0.5;
-    background-color: BLACK;
-    color: black;
-  }
-
-
-  .carouselcontainer:hover .hoverfooddescription {
-    opacity: 1;
-  }
-
-  /*overlay text on food images*/
-  .text {
-    color: black;
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 100;
-  }
+/*overlay text on food images*/
+.text {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+}

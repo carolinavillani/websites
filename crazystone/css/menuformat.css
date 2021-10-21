@@ -91,10 +91,6 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .menu-item-image {
-      width: 125px;
-      height: 125px;
-    }
   }
 
 

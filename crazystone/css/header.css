@@ -1,76 +1,64 @@
 header {
-    display: inline;
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-family: 'Rock Salt', cursive;
-  }
+  display: inline;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: "Rock Salt", cursive;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #F0F0F0;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
 
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
 
-  li a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
+li.d {
+  text-decoration: none;
+  float: right;
+  border-right: 1px solid #bbb;
+  line-height: 0.2;
+  margin: 12px 0px;
+  color: #111;
+  text-align: right;
+  padding: 15px 20px;
+  font-family: "Encode sans Condensed", sansserif;
+  font-size: 13px;
+  letter-spacing: 10px;
+}
 
-    text-decoration: none;
-  }
+li.c {
+  display: inline;
+  display: block;
+  color: #111;
+  text-align: left;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: "Rock Salt", cursive;
+}
 
+li a:hover:not(.active) {
+  text-decoration: underline;
+}
 
+li a.active {
+  text-decoration: underline;
+}
 
-  li.d {
-    text-decoration: none;
-    float: right;
-    border-right: 1px solid #bbb;
-    line-height: 0.2;
-    margin: 12px 0px;
-    color: #111;
-    text-align: right;
-    padding: 15px 20px;
-    font-family: 'Encode sans Condensed', sansserif;
-    font-size: 13px;
-    letter-spacing: 10px;
-  }
+li a.active:hover {
+  text-decoration: underline;
+}
 
-  li.c {
-
-
-    display: inline;
-    display: block;
-    color: #111;
-    text-align: left;
-
-
-
-    padding: 5px 20px;
-    text-decoration: none;
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-family: 'Rock Salt', cursive;
-  }
-
-  li a:hover:not(.active) {
-    text-decoration: underline;
-  }
-
-  li a.active {
-    text-decoration: underline;
-    }
-    
-    li a.active:hover {
-        text-decoration: underline;
-      }
-
-
-
-  li a:hover {
-
-    text-decoration: none;
-  }
+li a:hover {
+  text-decoration: none;
+}
