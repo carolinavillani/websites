@@ -12,180 +12,41 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/header.css">
-  <style>
-    .container {
-      position: relative;
-      width: 100%;
-    }
-
-    .container2 {
-
-      border-radius: 2px;
-      background-color: white;
-      width: 80%;
-      padding: 0px;
-    }
-
-    .fa {
-      padding: 10px;
-      font-size: 25px;
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-
-      border-radius: 50%;
-    }
-
-    .fa:hover {
-      opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background-color: white;
-      color: black;
-    }
-
-    .fa-instagram {
-      background-color: white;
-      color: black;
-    }
-
-    .fa-yelp {
-      background: white;
-      color: black;
-    }
-
-
-
-    .image {
-      opacity: 1;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-
-    .middle {
-      transition: .5s ease;
-      opacity: 0;
-    }
-
-
-
-    .container:hover .image {
-      opacity: 0.5;
-      background-color: BLACK;
-      color: black;
-    }
-
-
-    .container:hover .middle {
-      opacity: 1;
-    }
-
-    /*overlay text on food images*/
-    .text {
-      color: black;
-      font-size: 16px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-weight: 100;
-    }
-
-
-/*main background image formatting*/
-    img {
-      overflow: hidden;
-      width: 100%;
-      margin: 0;
-      background: linear-gradient(360deg, rgba(20, 20, 20, 0.7) -4.15%, rgba(0, 0, 0, 0.105) 21.26%);
-    }
-
-  
-
-    /* The dots/bullets/indicators */
-    .dot {
-      text-align: center;
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-
-      transition: background-color 0.6s ease;
-    }
-/*text about crazy stone formatting*/
-    p {
-      margin: 35px 150px;
-    }
-
-    body {
-
-      font-family: 'Encode sans Condensed', sansserif;
-      font-size: 14px;
-      letter-spacing: 7px;
-      max-width: 100%;
-      overflow-x: hidden;
-      margin: 0;
-      text-align: center;
-    }
-
-/*to leave main logo un-underlined when active*/
-    li a.active {
-      text-decoration: none;
-    }
-
-    li a.active:hover {
-      text-decoration: none;
-    }
-
-  </style>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/foodcarousel.css">
+  <link rel="stylesheet" href="css/homepageformat.css">
 </head>
 
 
 <ul>
-
   <li class="c"><a class="active" href="crazystone.html">Crazy Stone</a></li>
   <li class="d"><a href="location.html">LOCATION</a></li>
   <li class="d"><a href="hours.html">HOURS</a></li>
   <li class="d"><a href="orderonline.html">ORDER ONLINE</a></li>
   <li class="d"><a href="reservations.html">RESERVATIONS</a></li>
   <li class="d"><a href="menu.html">MENU</a></li>
-
-
-
 </ul>
 
 <body>
   <div>
     <img src=" photos/main image crazy stone.png" alt="background-image">
-
-    <p>
-
+    <div class="aboutcrazystone">
       At Crazy Stone, we specialize in hot stone entrees and innovative sushi dishes with fish sourced directly from
-      Hokkaido, Japan.</p>
+      Hokkaido, Japan.</div>
   </div>
   <div class="owl-carousel owl-theme">
     <div class="item">
       <div class="row">
-
         <div class="column">
-          <div class="container">
-            <img src="photos/chu-toro-and-truffle.png" alt="chu-toro-and-truffle" style="width:100%" class="image">
+          <div class="carouselcontainer">
+            <img src="photos/chu-toro-and-truffle.png" alt="chu-toro-and-truffle" style="width:100%"
+              class="foodcarouselimage">
             <div class="text">
-              <div class="middle">
+              <div class="hoverfooddescription">
                 CHU TORO & TRUFFLE</div>
             </div>
           </div>
@@ -194,12 +55,11 @@
     </div>
     <div class="item">
       <div class="row">
-
         <div class="column">
-          <div class="container">
-            <img src="photos/hokkaido-uni.png" alt="hokkaido-uni" style="width:100%" class="image">
+          <div class="carouselcontainer">
+            <img src="photos/hokkaido-uni.png" alt="hokkaido-uni" style="width:100%" class="foodcarouselimage">
             <div class="text">
-              <div class="middle">
+              <div class="hoverfooddescription">
                 HOKKAIDO UNI</div>
             </div>
           </div>
@@ -211,10 +71,11 @@
         <div class="row">
 
           <div class="column">
-            <div class="container">
-              <img src="photos/hamachi-nigiri-special.png" alt="hamachi-nigiri-special" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/hamachi-nigiri-special.png" alt="hamachi-nigiri-special" style="width:100%"
+                class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   HAMACHI NIGIRI SPECIAL</div>
               </div>
             </div>
@@ -225,12 +86,12 @@
     <div class="item">
       <div class="item">
         <div class="row">
-
           <div class="column">
-            <div class="container">
-              <img src="photos/steak-stone-entree.png" alt="steak-stone-entree" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/steak-stone-entree.png" alt="steak-stone-entree" style="width:100%"
+                class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   STEAK STONE ENTREE</div>
               </div>
             </div>
@@ -241,12 +102,12 @@
     <div class="item">
       <div class="item">
         <div class="row">
-
           <div class="column">
-            <div class="container">
-              <img src="photos/twin-lobster-tail-stone-entree.png" alt="twin-lobster-tail-stone-entree" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/twin-lobster-tail-stone-entree.png" alt="twin-lobster-tail-stone-entree"
+                style="width:100%" class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   TWIN LOBSTER TAIL STONE ENTREE</div>
               </div>
             </div>
@@ -257,12 +118,12 @@
     <div class="item">
       <div class="item">
         <div class="row">
-
           <div class="column">
-            <div class="container">
-              <img src="photos/NY-steak-hibachi.png" alt="NY-steak-hibachi" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/NY-steak-hibachi.png" alt="NY-steak-hibachi" style="width:100%"
+                class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   N.Y STEAK HIBACHI</div>
               </div>
             </div>
@@ -275,10 +136,11 @@
         <div class="row">
 
           <div class="column">
-            <div class="container">
-              <img src="photos/ice-breaker-combo.png" alt="ice-breaker-combo" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/ice-breaker-combo.png" alt="ice-breaker-combo" style="width:100%"
+                class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   ICE BREAKER COMBO</div>
               </div>
             </div>
@@ -291,10 +153,11 @@
         <div class="row">
 
           <div class="column">
-            <div class="container">
-              <img src="photos/coco-shrimp-roll.png" alt="coco-shrimp-roll" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/coco-shrimp-roll.png" alt="coco-shrimp-roll" style="width:100%"
+                class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   COCO SHRIMP ROLL</div>
               </div>
             </div>
@@ -307,10 +170,10 @@
         <div class="row">
 
           <div class="column">
-            <div class="container">
-              <img src="photos/spicy-squid.png" alt="spicy-squid" style="width:100%" class="image">
+            <div class="carouselcontainer">
+              <img src="photos/spicy-squid.png" alt="spicy-squid" style="width:100%" class="foodcarouselimage">
               <div class="text">
-                <div class="middle">
+                <div class="hoverfooddescription">
                   SPICY SQUID</div>
               </div>
             </div>
@@ -318,7 +181,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
 
@@ -350,30 +212,27 @@
     })</script>
 
 
-  &nbsp;
+ 
 
 
-  </h1>
+  
 
-  &nbsp;
-  &nbsp;
-  <br>
-  <br>
+ 
   <center>
     <p>
-    <div class="container2">
-      <br>
+     <div class="footer">
+
 
       TEL (508) 573-1732 <br>
       1009 Boston Post Rd. E, Marlborough MA 01752
       <br>
       <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-instagram"></a>
+      <a href="https://www.instagram.com/crazytunasushi/?hl=en" class="fa fa-instagram"></a>
       <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
 
-    </div>
-    </p>
-    </center>
-</body>
+     </div>
 
-</html>
+    </p>
+  </center>
+
+</body>
