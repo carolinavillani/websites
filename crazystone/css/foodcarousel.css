@@ -1,8 +1,10 @@
+/* position carousel */
 .carouselcontainer {
   position: relative;
   width: 100%;
 }
 
+/*image formatting*/
 .foodcarouselimage {
   opacity: 1;
   width: 100%;
@@ -11,22 +13,18 @@
   backface-visibility: hidden;
 }
 
+/* make text description visible only when hovering */
 .hoverfooddescription {
   transition: 0.5s ease;
   opacity: 0;
 }
 
+/* set transparency of overlay when hovering */
 .carouselcontainer:hover .foodcarouselimage {
   opacity: 0.5;
-  background-color: BLACK;
-  color: black;
 }
 
-.carouselcontainer:hover .hoverfooddescription {
-  opacity: 1;
-}
-
-/*overlay text on food images*/
+/*format text on food images*/
 .text {
   color: black;
   font-size: 16px;
@@ -35,4 +33,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 100;
+}
+
+/* make image text opaque */
+.carouselcontainer:hover .hoverfooddescription {
+  opacity: 1;
 }
