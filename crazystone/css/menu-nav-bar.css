@@ -1,3 +1,23 @@
+
+.menubox {
+  display: table;
+  /* keep the background color wrapped tight */
+  margin: 40px auto 50px auto;
+  /* keep the table centered */
+  padding: 10px;
+  font-size: 13px;
+  background-color: #c4c4c4;
+  color: #ffffff;
+  width: 90%;
+  color: black;
+  display: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+}
+
 nav a{
   display: inline-block;
   display: center;
@@ -23,21 +43,3 @@ nav a:hover {
   text-decoration: none;
 }
 
-.menubox {
-  display: table;
-  /* keep the background color wrapped tight */
-  margin: 40px auto 50px auto;
-  /* keep the table centered */
-  padding: 10px;
-  font-size: 13px;
-  background-color: #c4c4c4;
-  color: #ffffff;
-  width: 90%;
-  color: black;
-  display: center;
-}
-
-h1 {
-  font-size: 20px;
-  margin: 0px 0px 0px 0px;
-}
