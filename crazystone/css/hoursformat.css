@@ -1,0 +1,39 @@
+
+  
+  table,th,td {
+    border-spacing: 20px;
+    }
+  
+  
+  
+  body {
+    font-family: "Encode sans Condensed", sansserif;
+    font-size: 14px;
+    letter-spacing: 7px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .hours {
+    letter-spacing: 9px;
+    margin: 100px 150px;
+    font-family: "Encode sans Condensed", sansserif;
+    font-size: 14px;
+    letter-spacing: 7px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 17px;
+    letter-spacing: 6px;
+    margin: 40px 10px 10px 10px;
+  }
+  
+  
+  
+  

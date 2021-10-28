@@ -1,19 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/menu-nav-bar.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/menuformat.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/menu-nav-bar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/menuformat.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" async></script>
+    <script src="js/specialrolls.js" async></script>
 </head>
-
 
 <ul>
   <li class="crazystonelogo"><a href="crazystone.html">Crazy Stone</a></li>
@@ -24,346 +25,66 @@
   <li class="headerlinks"><a class="active" href="appetizers.html">MENU</a></li>
 </ul>
 
-<body>
-  <div class="menubox">
-    <header>
-      <h1>
-        Menu
-      </h1>
-    </header>
-    <nav>
-      <a href="appetizers.html">Appetizers</a>
-      <a href="soupandsalad.html">Soup&Salad</a>
-      <a href="sushisashimi.html">Sushi&Sashimi</a>
-      <a href="classicrolls.html">Classic Rolls</a>
-      <a class='active' href="specialrolls.html">Special Rolls</a>
-      <a class="item" href="sushientrees.html">Sushi Entrees</a>
-      <a class="item" href="classicentrees.html">Classic Entrees</a>
-      <a href="stoneentrees.html">Stone Entrees</a>
+<body onload="renderMenu()">
+    <div class="menubox">
+        <header>
+            <h1>
+                Menu
+            </h1>
+        </header>
+        <nav>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="soupandsalad.html">Soup&Salad</a>
+            <a href="sushisashimi.html">Sushi&Sashimi</a>
+            <a href="classicrolls.html">Classic Rolls</a>
+            <a class='active' href="specialrolls.html">Special Rolls</a>
+            <a href="sushientrees.html">Sushi Entrees</a>
+            <a href="classicentrees.html">Classic Entrees</a>
+            <a href="stoneentrees.html">Stone Entrees</a>
+            <a href="johnsspecials.html">John's Specials'</a>
+        </nav>
 
-      <a class="item" href="johnsspecials.html">John's Specials'</a>
-    </nav>
-    <div class="container">
-      <div class="menu">
+        <div id="target">Loading...</div>
+        <script id="template" type="x-tmpl-mustache">
+           <div class="container">
+            <div class="menu">
+              {{#menuGroups}}
+              <h2 class="menu-group-heading">
+                {{menuGroupHeading}}
+              </h2>
+              <div class="menu-group">
+                {{#menuItems}}
+                <div class="menu-item">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading"> <span class="menu-item-name">
+                        {{name}}
+                      </span><span class="menu-item-price">
+                        {{price}}
+                      </span></h3>
+                    <p class="menu-item-description">
+                      {{description}}
+                    </p>
+                  </div>
+                </div>
+                {{/menuItems}}
+                {{/menuGroups}}
+               </div>
+            </div>
+          </div>
 
-
-        <h2 class="menu-group-heading">
-          Special Rolls
-        </h2>
-
-
-        <div class="menu-group">
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  FISH CAKE
-                </span><span class="menu-item-price">
-                  $14.75
-                </span></h3>
-              <p class="menu-item-description">
-                (No Seaweed) Spicy tuna, salmon, eel, avocado, eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CRYSTAL QUEEN
-                </span><span class="menu-item-price">
-                  $14.25
-                </span></h3>
-              <p class="menu-item-description">
-                Fried kani, shrimp tempura, avocado, soy wrapper, topped w. blue crabmeat, spicy mayo, and eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  GREED GARDEN
-                </span><span class="menu-item-price">
-                  $12.25
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura sweet potato and avocado inside, topped w. sesame seeds and eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  COCO SHRIMP
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Shrimp tempura, avocado, cucumber, soy wrapper, topped w. salmon, tuna, escolar, served w. sweet chili,
-                honey wasabi sauce, and coconut flakes
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  KISS ME
-                </span><span class="menu-item-price">
-                  $13.95
-                </span></h3>
-              <p class="menu-item-description">
-                Black pepper tuna and asparagus inside, topped w. striped bass, cilantro, and spicy sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  TUNA’S LOVER (NO RICE)
-                </span><span class="menu-item-price">
-                  $15.25
-                </span></h3>
-              <p class="menu-item-description">
-                No rice, spicy tuna, salmon and avocado wrapped by sliced tuna, topped w. seaweed salad, served w. ponzu
-                and spicy sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  OUT OF CONTROL
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna, spicy yellowtail and crunchy inside, topped w. spicy imitation crabmeat
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  PERFECT MATCH ROLL
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura avocado and spicy yellowtail inside, topped w. seared escolar, mango, and homemade mango sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SUNSHINE ROLL
-                </span><span class="menu-item-price">
-                  $14.25
-                </span></h3>
-              <p class="menu-item-description">
-                Cooked shrimp, avocado, crunchy and spicy mayo inside, topped with salmon, sliced fresh lemon, and
-                salmon roe
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  BLACK JACK ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura spicy tuna roll, topped w. a mix of cilantro, onion, lobster salad and tobiko, served w. sweet
-                chili sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SPICY TUNA
-                </span><span class="menu-item-price">
-                  $14.75
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna roll
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  NEW YORK ROLL
-                </span><span class="menu-item-price">
-                  $13.95
-                </span></h3>
-              <p class="menu-item-description">
-                Kani, avocado, and cream cheese tempura roll, topped w. spicy kani and eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  FRIDAY ROLL
-                </span><span class="menu-item-price">
-                  $12.25
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna and cooked shrimp inside, topped w. avocado, tempura kani and tempura escolar, served w.
-                sweet chili and eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  S-FIGURE ROLL
-                </span><span class="menu-item-price">
-                  $18.75
-                </span></h3>
-              <p class="menu-item-description">
-                Shrimp tempura, avocado, cream cheese, soy wrapper, topped w. spicy kani, spicy mayo, and eel sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  OKAY ROLL
-                </span><span class="menu-item-price">
-                  $19.25
-                </span></h3>
-              <p class="menu-item-description">
-                Lobster tempura, avocado, salmon wrapped by soy paper, topped w. lobster salad, spicy mayo, and eel
-                sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  BOSTON LOBSTER ROLL
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Steamed lobster tail, lobster salad, and fresh mango wrapped by soy paper, topped w. homemade mango
-                sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  HOT GIRL ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna, avocado, soy wrapper, topped w. bluefin tuna, salmon, and escolar, served w. spicy mayo and
-                honey wasabi
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  GREEN RIVER ROLL
-                </span><span class="menu-item-price">
-                  $13.95
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy salmon, crunchy, and avocado inside, topped w. seaweed salad, smoked salmon, and spicy sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SPIDERMAN ROLL
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura soft shell crab and cucumber inside, topped w. a mix of tuna, mango, avocado, and tobiko, served
-                w. eel sauce and honey wasabi
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  PATRIOTS ROLL
-                </span><span class="menu-item-price">
-                  $13.75
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura kani and shrimp inside, topped w. lobster salad, spicy tuna, spicy mayo, eel sauce, and tobiko
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  MAGICAL ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna and cucumber roll with smoked eel, cooked shrimp, avocado, and red tobiko on top
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  MIND ERASER ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy kani and crunchy inside, topped w. yellowtail and jalapeno
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  WAYSIDE ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy tuna, crunchy, and mango inside, topped w. spicy salmon, imitation crabmeat, and spicy mayo
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  FIREMAN ROLL
-                </span><span class="menu-item-price">
-                  $13.25
-                </span></h3>
-              <p class="menu-item-description">
-                Tempura roll contains tuna, salmon, cream cheese and escolar inside, topped w. masago, scallion, and
-                spicy mayo
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </script>
     </div>
-  </div>
 </body>
 
 
 <center>
-  <div class="footer">
-    TEL (508) 573-1732 <br>
-    1009 Boston Post Rd. E, Marlborough MA 01752
-    <br>
-    <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/crazytunasushi/?hl=en" class="fa fa-instagram"></a>
-    <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
-  </div>
+    <div class="footer">
+        TEL (508) 573-1732 <br>
+        1009 Boston Post Rd. E, Marlborough MA 01752
+        <br>
+        <a class="fa fa-facebook" href="https://www.facebook.com/crazystone01752/"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/crazytunasushi/?hl=en"></a>
+        <a class="fa fa-yelp" href="https://www.yelp.com/biz/crazy-stone-marlborough-2"></a>
+    </div>
+</center>
+</html>

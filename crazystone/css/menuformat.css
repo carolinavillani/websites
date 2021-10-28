@@ -7,7 +7,7 @@
 .menu-group-heading {
   margin: 0;
   font-weight: bold;
-  padding-bottom: 0.5em;
+  padding-bottom: 0em;
   padding-top: 0em;
   font-size: 20px;
   text-align: left;
@@ -44,10 +44,11 @@
   text-align: center;
 }
 
-.menu-item-other {
+.menu-subheading {
   margin-right: 0em;
+  margin-top:0em;
   text-align: left;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   padding-top: 0;
   font-size: 11px;
 }
@@ -57,6 +58,24 @@
 }
 
 .menu-item-description {
+  line-height: 2;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 5;
+  margin-right: 90;
+  text-align: left;
+}
+
+.menu-item-description1 {
+  line-height: 2;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 90;
+  text-align: left;
+}
+
+.menu-item-description2 {
   line-height: 2;
   margin-left: 0;
   margin-top: 0;

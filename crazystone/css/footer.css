@@ -1,6 +1,6 @@
 .footer {
   border-radius: 2px;
-  background-color: white;
+  background-color: #fcfcfc;
   width: 80%;
   padding: 20px;
 }
@@ -13,6 +13,7 @@
   height: 50px;
   text-align: center;
   text-decoration: none;
+  background-color: #fcfcfc;
   margin: 5px 2px;
   border-radius: 50%;
 }
@@ -23,16 +24,16 @@
 
 /* icons */
 .fa-facebook {
-  background-color: white;
+  background-color: #fcfcfc;
   color: black;
 }
 
 .fa-instagram {
-  background-color: white;
+  background-color: #fcfcfc;
   color: black;
 }
 
 .fa-yelp {
-  background: white;
+  background-color: #fcfcfc;
   color: black;
 }

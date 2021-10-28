@@ -6,7 +6,10 @@
   /* keep the table centered */
   padding: 10px;
   font-size: 13px;
-  background-color: #c4c4c4;
+  background-color:#F6F4F3;
+  border-style: hidden;
+  border-radius:25px;
+  border-width: 0.5px;
   color: #ffffff;
   width: 90%;
   color: black;

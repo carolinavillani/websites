@@ -5,12 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/menu-nav-bar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/menuformat.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" async></script>
+  <script src="js/classicentrees.js" async></script>
+
 </head>
 
 <ul>
@@ -22,7 +26,7 @@
   <li class="headerlinks"><a class="active" href="appetizers.html">MENU</a></li>
 </ul>
 
-<body>
+<body onload="renderMenu()">
   <div class="menubox">
     <header>
       <h1>
@@ -38,549 +42,47 @@
       <a href="sushientrees.html">Sushi Entrees</a>
       <a class='active' href="classicentrees.html">Classic Entrees</a>
       <a href="stoneentrees.html">Stone Entrees</a>
-      <a class="item" href="johnsspecials.html">John's Specials'</a>
+      <a href="johnsspecials.html">John's Specials'</a>
     </nav>
-    <div class="container">
-      <div class="menu">
-        <div class="menu-group-heading">
-          HIBACHI
-        </div>
-        <div class="menu-item-other">
-          Served with Onion Soup, Salad and Fried Rice
-        </div>
-        <div class="menu-group">
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  MIXED VEGETABLES
-                </span><span class="menu-item-price">
-                  $16.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHICKEN
-                </span><span class="menu-item-price">
-                  $18.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  JUMBO SCALLOP (8PCS)
-                </span><span class="menu-item-price">
-                  $21.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SALMON
-                </span><span class="menu-item-price">
-                  $21.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  BLUEFIN TUNA
-                </span><span class="menu-item-price">
-                  $21.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  N.Y STEAK
-                </span><span class="menu-item-price">
-                  $21.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  JUMBO SHRIMP
-                </span><span class="menu-item-price">
-                  $21.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  TWIN LOBSTER TAIL
-                </span><span class="menu-item-price">
-                  $19.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHICKEN & STEAK HIBACHI
-                </span><span class="menu-item-price">
-                  $19.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHICKEN & SCALLOP HIBACHI
-                </span><span class="menu-item-price">
-                  $24.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  STEAK & SHRIMP HIBACHI
-                </span><span class="menu-item-price">
-                  $24.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  STEAK & SCALLOP HIBACHI
-                </span><span class="menu-item-price">
-                  $24.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SHRIMP & SCALLOP HIBACHI
-                </span><span class="menu-item-price">
-                  $24.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried Rice (Brown Rice +$1)
-              </p>
-            </div>
-          </div>
+
+    <div id="target">Loading...</div>
+    <script id="template" type="x-tmpl-mustache">
+         <div class="container">
           <div class="menu">
+            {{#menuGroups}}
             <div class="menu-group-heading">
-              TERIYAKI
+              {{menuGroupHeading}}
             </div>
-            <div class="menu-item-other">
-              Served with Onion Soup, Salad and Fried Rice
+            <div class="menu-subheading">
+              {{menuSubHeading}}
             </div>
             <div class="menu-group">
+              {{#menuItems}}
               <div class="menu-item">
                 <div class="menu-item-text">
                   <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      TOFU TERIYAKI
+                      {{name}}
                     </span><span class="menu-item-price">
-                      $11.75
+                      {{price}}
                     </span></h3>
                   <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
+                    {{description}}
                   </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      CHICKEN TERIYAKI (11oz)
-                    </span><span class="menu-item-price">
-                      $13.95
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      SALMON TERIYAKI (9oz)
-                    </span><span class="menu-item-price">
-                      $14.95
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      BLUEFIN TUNA TERIYAKI (9oz)
-                    </span><span class="menu-item-price">
-                      $14.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      STEAK TERIYAKI (9oz)
-                    </span><span class="menu-item-price">
-                      $13.75
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      JUMBO SHRIMP TERIYAKI (12pcs)
-                    </span><span class="menu-item-price">
-                      $15.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      SEAFOOD TERIYAKI
-                    </span><span class="menu-item-price">
-                      $16.75
-                    </span></h3>
-                  <p class="menu-item-description">
-                    Steamed Rice (Fried Rice +$2.50)
-                  </p>
-                </div>
-              </div>
-              <div class="menu">
-                <div class="menu-group-heading">
-                  TEMPURA
-                </div>
-                <div class="menu-item-other">
-                  Served with Onion Soup, Salad and Fried Rice
-                </div>
-                <div class="menu-group">
-                  <div class="menu-item">
-                    <div class="menu-item-text">
-                      <h3 class="menu-item-heading"> <span class="menu-item-name">
-                          MIXED VEGETABLE
-                        </span><span class="menu-item-price">
-                          $11.75
-                        </span></h3>
-                      <p class="menu-item-description">
-                        Steamed Rice (Fried Rice +$2.50)
-                      </p>
-                    </div>
+                  <div class="menu-item-description">
+                    {{description1}}
                   </div>
-                  <div class="menu-item">
-                    <div class="menu-item-text">
-                      <h3 class="menu-item-heading"> <span class="menu-item-name">
-                          TEMPURA CHICKEN (6PCS)
-                        </span><span class="menu-item-price">
-                          $6.95
-                        </span></h3>
-                      <p class="menu-item-description">
-                        Steamed Rice (Fried Rice +$2.50)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="menu-item-text">
-                      <h3 class="menu-item-heading"> <span class="menu-item-name">
-                          TEMPURA JUMBO SHRIMP
-                        </span><span class="menu-item-price">
-                          $7.95
-                        </span></h3>
-                      <p class="menu-item-description">
-                        6 pcs of tempura shrimp and mixed tempura vegetables<br>
-                        Steamed Rice (Fried Rice +$2.50)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="menu-item-text">
-                      <h3 class="menu-item-heading"> <span class="menu-item-name">
-                          TEMPURA SEAFOOD
-                        </span><span class="menu-item-price">
-                          $8.25
-                        </span></h3>
-                      <p class="menu-item-description">
-                        Shrimp, scallop, salmon, kani (imitation crabmeat) & seasonal vegetables<br>
-                        Steamed Rice (Fried Rice +$2.50)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="menu">
-                    <div class="menu-group-heading">
-                      KATSU
-                    </div>
-                    <div class="menu-item-other">
-                      Served with Onion Soup, Salad and Fried Rice
-                    </div>
-                    <div class="menu-group">
-                      <div class="menu-item">
-                        <div class="menu-item-text">
-                          <h3 class="menu-item-heading"> <span class="menu-item-name">
-                              KATSU CHICKEN
-                            </span><span class="menu-item-price">
-                              $11.75
-                            </span></h3>
-                          <p class="menu-item-description">
-                            11 oz, serving with one onion soup, one salad, and one white rice (fried rice +$2.50)
-                          </p>
-                        </div>
-                      </div>
-                      <div class="menu">
-                        <div class="menu-group-heading">
-                          Noodles & Rice
-                        </div>
-                        <div class="menu-item-other">
-                          Served with Onion Soup, Salad and Fried Rice
-                        </div>
-                        <div class="menu-group">
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                                  HAWAII FRIED RICE
-                                </span><span class="menu-item-price">
-                                </span></h3>
-                              <p class="menu-item-description">
-                                Pineapple, onion and egg<br>
-                                <br>
-                                Choose one:
-                              </p>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Vegetable
-                                </span><span class="menu-item-price">
-                                  $11.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Chicken
-                                </span><span class="menu-item-price">
-                                  $12.25
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Beef
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Seafood
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Shrimp
-                                </span><span class="menu-item-price">
-                                  $15.75
-                                </span></h4>
-                            </div>
-                          </div><br>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                                  HOUSE SPICY FRIED RICE
-                                </span><span class="menu-item-price">
-                                </span></h3>
-                              <p class="menu-item-description">
-                                Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables
-                                <br>
-                                <br>
-                                Choose one:
-                              </p>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Vegetable
-                                </span><span class="menu-item-price">
-                                  $11.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Chicken
-                                </span><span class="menu-item-price">
-                                  $12.25
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Beef
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Seafood
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Shrimp
-                                </span><span class="menu-item-price">
-                                  $15.75
-                                </span></h4>
-                            </div>
-                          </div><br>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                                  Lo Mein or Udon</span><span class="menu-item-price">
-                                </span></h3>
-                              <p class="menu-item-description">
-                                Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables
-                                <br>
-                                <br>
-                                Choose one:
-                              </p>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Vegetable
-                                </span><span class="menu-item-price">
-                                  $11.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Chicken
-                                </span><span class="menu-item-price">
-                                  $12.25
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Beef
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Seafood
-                                </span><span class="menu-item-price">
-                                  $13.75
-                                </span></h4>
-                            </div>
-                          </div>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h4 class="menu-item-heading"> <span class="menu-item-name">
-                                  Shrimp
-                                </span><span class="menu-item-price">
-                                  $15.75
-                                </span></h4>
-                            </div>
-                          </div><br>
-                          <div class="menu-item">
-                            <div class="menu-item-text">
-                              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                                  SINGAPORE NOODLES</span><span class="menu-item-price">
-                                  $13.25
-                                </span></h3>
-                              <div class="menu-item-description">
-                                Thin Rice Noodles Sauteed with a Combination of Chicken, Shrimp, Beef, Egg, Mixed
-                                Vegetables, and Light Curry Sauce
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="menu-item-description2">
+                    {{description2}}
                   </div>
                 </div>
               </div>
-            </div>
+              {{/menuItems}}
+              {{/menuGroups}}
+             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+      </script>
   </div>
 </body>
 
@@ -590,9 +92,10 @@
     TEL (508) 573-1732 <br>
     1009 Boston Post Rd. E, Marlborough MA 01752
     <br>
-    <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/crazytunasushi/?hl=en" class="fa fa-instagram"></a>
-    <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
+    <a class="fa fa-facebook" href="https://www.facebook.com/crazystone01752/"></a>
+    <a class="fa fa-instagram" href="https://www.instagram.com/crazytunasushi/?hl=en"></a>
+    <a class="fa fa-yelp" href="https://www.yelp.com/biz/crazy-stone-marlborough-2"></a>
   </div>
 </center>
 
+</html>

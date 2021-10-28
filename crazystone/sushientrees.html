@@ -1,16 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/menu-nav-bar.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/menuformat.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/menu-nav-bar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/menuformat.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" async></script>
+    <script src="js/sushientrees.js" async></script>
 </head>
 
 <ul>
@@ -22,310 +25,69 @@
   <li class="headerlinks"><a class="active" href="appetizers.html">MENU</a></li>
 </ul>
 
-<body>
- <div class="menubox">
-    <header><h1>
-      Menu
-    </h1></header>
-    <nav>
-      <a href="appetizers.html">Appetizers</a>
-      <a href="soupandsalad.html">Soup&Salad</a>
-      <a href="sushisashimi.html">Sushi&Sashimi</a>
-      <a href="classicrolls.html">Classic Rolls</a>
-      <a href="specialrolls.html">Special Rolls</a>
-      <a class='active' href="sushientrees.html">Sushi Entrees</a>
-      <a class="item" href="classicentrees.html">Classic Entrees</a>
-      <a href="stoneentrees.html">Stone Entrees</a>
-      <a class="item" href="johnsspecials.html">John's Specials'</a>
-    </nav>
-    <div class="container">
-      <div class="menu">
-        <div class="menu-group-heading">
-          Classical Combo
-        </div>
-        <div class="menu-item-other">
-          EACH COMBO COMES WITH ONE MISO SOUP AND ONE SALAD
-        </div>
-        <div class="menu-group">
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  UNAGI DON
-                </span><span class="menu-item-price">
-                  $20.25
-                </span></h3>
-              <p class="menu-item-description">
-                Toasted eel over sushi rice, served with miso soup
-              </p>
+<body onload="renderMenu()">
+    <div class="menubox">
+        <header>
+            <h1>
+                Menu
+            </h1>
+        </header>
+        <nav>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="soupandsalad.html">Soup&Salad</a>
+            <a href="sushisashimi.html">Sushi&Sashimi</a>
+            <a href="classicrolls.html">Classic Rolls</a>
+            <a href="specialrolls.html">Special Rolls</a>
+            <a class='active' href="sushientrees.html">Sushi Entrees</a>
+            <a href="classicentrees.html">Classic Entrees</a>
+            <a href="stoneentrees.html">Stone Entrees</a>
+            <a href="johnsspecials.html">John's Specials'</a>
+        </nav>
+
+        <div id="target">Loading...</div>
+        <script id="template" type="x-tmpl-mustache">
+           <div class="container">
+            <div class="menu">
+              {{#menuGroups}}
+              <div class="menu-group-heading">
+                {{menuGroupHeading}}
+              </div>
+              <div class="menu-subheading">
+                {{menuSubHeading}}
+              </div>
+              <div class="menu-group">
+                {{#menuItems}}
+                <div class="menu-item">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading"> <span class="menu-item-name">
+                        {{name}}
+                      </span><span class="menu-item-price">
+                        {{price}}
+                      </span></h3>
+                    <p class="menu-item-description">
+                      {{description}}
+                    </p>
+                  </div>
+                </div>
+                {{/menuItems}}
+                {{/menuGroups}}
+               </div>
             </div>
           </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  Tekka Don
-                </span><span class="menu-item-price">
-                  $22.25
-                </span></h3>
-              <p class="menu-item-description">
-                9 pcs of bluefin tuna on a bed of seasoned rice, served with miso soup
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  TRIO SUSHI
-                </span><span class="menu-item-price">
-                  $24.25
-                </span></h3>
-              <p class="menu-item-description">
-                3 pcs of salmon, 3 pcs of bluefin tuna, 3 pcs of yellowtail, and 1 California roll, served with miso
-                soup and salad
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHIRASHI
-                </span><span class="menu-item-price">
-                  $22.25
-                </span></h3>
-              <p class="menu-item-description">
-                Chef’s choices of assorted sashimi over a bed of seasoned rice, served w. miso soup
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  VEGETABLE SUSHI COMBO
-                </span><span class="menu-item-price">
-                  $19.75
-                </span></h3>
-              <p class="menu-item-description">
-                Black pepper tuna and asparagus inside, topped w. striped bass, cilantro, and spicy sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SUSHI COMBO
-                </span><span class="menu-item-price">
-                  $24.25
-                </span></h3>
-              <p class="menu-item-description">
-                Chef’s choices of assorted 9 pcs of raw fish on seasoned rice ball plus one tuna roll, served with miso
-                soup and salad
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SASHIMI COMBO
-                </span><span class="menu-item-price">
-                  $27.25
-                </span></h3>
-              <p class="menu-item-description">
-                Chef’s choices of assorted 18 pcs of raw fish, served with steamed rice, miso soup and salad
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SUSHI & SASHIMI FOR 1
-                </span><span class="menu-item-price">
-                  $30.25
-                </span></h3>
-              <p class="menu-item-description">
-                Chef’s choices of assorted 5 pcs sushi, 10 pcs sashimi & 1 tuna roll, served w. miso soup & salad
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SUSHI & SASHIMI FOR 2
-                </span><span class="menu-item-price">
-                  $63.25
-                </span></h3>
-              <p class="menu-item-description">
-                Chef’s choices of assorted 9 pcs sushi, 18 pcs sashimi, 1 california roll and 1 mind eraser special
-                roll, served with 2 miso soups and 2 salads
-              </p>
-            </div>
-          </div>
-          <div class="menu">
-            <div class="menu-group-heading">
-              Crazy Combo
-            </div>
-            <div class="menu-item-other">EVERY COMBO COMES WITH ONE MISO SOUP</div>
-            <div class="menu-group">
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      SPICY ROLL COMBO
-                    </span><span class="menu-item-price">
-                      $18.75
-                    </span></h3>
-                  <p class="menu-item-description">
-                    SPICY TUNA ROLL, SPICY SALMON ROLL, SPICY CRABMEAT ROLL, SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      COOKED ROLL COMBO
-                    </span><span class="menu-item-price">
-                      $23.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    CALIFORNIA ROLL, SHRIMP TEMPURA ROLL, NEW YORK SPECIAL ROLL, AND SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      DAVID BOAT
-                    </span><span class="menu-item-price">
-                      $23.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    SPICY TUNA ROLL, SALMON AVOCADO ROLL, PATRIOTS SPECIAL ROLL, AND SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      MONDAY BOAT
-                    </span><span class="menu-item-price">
-                      $22.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    FIREMAN SPECIAL ROLL (SPICY), 3 PCS OF CRABSTICK SUSHI, 2 PCS OF EEL SUSHI, SERVED WITH ONE MISO
-                    SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      TUESDAY BOAT
-                    </span><span class="menu-item-price">
-                      $30.75
-                    </span></h3>
-                  <p class="menu-item-description">
-                    BOSTON LOBSTER SPECIAL ROLL, 2 PCS OF UNI SUSHI, 2 PCS OF SALMON ROE SUSHI, SERVED WITH ONE MISO
-                    SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      WEDNESDAY BOAT
-                    </span><span class="menu-item-price">
-                      $26.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    WAYSIDE SPECIAL ROLL (MILD SPICY), 3 PCS OF COOKED SHRIMP SASHIMI, 2 PCS OF SWEET SHRIMP SUSHI,
-                    SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      THURSDAY BOAT
-                    </span><span class="menu-item-price">
-                      $24.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    CHEF'S CHOICE OF SPECIAL TUNA ROLL (MILD SPICY), 3 PCS OF TUNA SUSHI, 3 PCS OF TUNA SASHIMI, AND
-                    SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      FRIDAY BOAT
-                    </span><span class="menu-item-price">
-                      $24.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    CHEF'S CHOICE OF SPECIAL YELLOWTAIL ROLL, 3 PCS OF YELLOWTAIL SUSHI, 3 PCS OF YELLOWTAIL SASHIMI,
-                    AND SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      SATURDAY BOAT
-                    </span><span class="menu-item-price">
-                      $24.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    CHEF'S CHOICE OF SPECIAL SALMON ROLL, 3 PCS OF SALMON SUSHI, 3 PCS OF SALMON SASHIMI, AND SERVED
-                    WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-text">
-                  <h3 class="menu-item-heading"> <span class="menu-item-name">
-                      SUNDAY BOAT
-                    </span><span class="menu-item-price">
-                      $25.25
-                    </span></h3>
-                  <p class="menu-item-description">
-                    DRAGON ROLL, 2 PCS OF SCALLOP SUSHI, 2 PCS OF TORO SUSHI, AND SERVED WITH ONE MISO SOUP
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        </script>
     </div>
- </div>
 </body>
-</h1>
+
 
 <center>
-  <div class="footer">
-
-    TEL (508) 573-1732 <br>
-    1009 Boston Post Rd. E, Marlborough MA 01752
-    <br>
-    <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/crazytunasushi/?hl=en" class="fa fa-instagram"></a>
-    <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="footer">
+        TEL (508) 573-1732 <br>
+        1009 Boston Post Rd. E, Marlborough MA 01752
+        <br>
+        <a class="fa fa-facebook" href="https://www.facebook.com/crazystone01752/"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/crazytunasushi/?hl=en"></a>
+        <a class="fa fa-yelp" href="https://www.yelp.com/biz/crazy-stone-marlborough-2"></a>
+    </div>
+</center>
 </html>

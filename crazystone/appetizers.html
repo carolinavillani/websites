@@ -1,19 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/menu-nav-bar.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/menuformat.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/menu-nav-bar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/menuformat.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" async></script>
+    <script src="js/appetizers.js" async></script>
 </head>
-
 
 <ul>
   <li class="crazystonelogo"><a href="crazystone.html">Crazy Stone</a></li>
@@ -24,330 +25,66 @@
   <li class="headerlinks"><a class="active" href="appetizers.html">MENU</a></li>
 </ul>
 
-<body>
-  <div class="menubox">
-    <header>
-      <h1>
-        Menu
-      </h1>
-    </header>
-    <nav>
-      <a class='active' href="appetizers.html">Appetizers</a>
-      <a href="soupandsalad.html">Soup&Salad</a>
-      <a href="sushisashimi.html">Sushi&Sashimi</a>
-      <a href="classicrolls.html">Classic Rolls</a>
-      <a href="specialrolls.html">Special Rolls</a>
-      <a href="sushientrees.html">Sushi Entrees</a>
-      <a href="classicentrees.html">Classic Entrees</a>
-      <a href="stoneentrees.html">Stone Entrees</a>
-      <a href="johnsspecials.html">John's Specials'</a>
-    </nav>
-    
-    <div class="container">
-      <div class="menu">
-        <h2 class="menu-group-heading">
-          APPETIZERS
-        </h2>
-        <div class="menu-group">
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  MONEY BAG (5PCS)
-                </span><span class="menu-item-price">
-                  $7.95
-                </span></h3>
-              <p class="menu-item-description">
-                Spicy salmon, spicy kani and cream cheese wrapped in deeply fried wonton skin, served with guacamole and
-                sweet chili sauce
-              </p>
+<body onload="renderMenu()">
+    <div class="menubox">
+        <header>
+            <h1>
+                Menu
+            </h1>
+        </header>
+        <nav>
+            <a class='active' href="appetizers.html">Appetizers</a>
+            <a href="soupandsalad.html">Soup&Salad</a>
+            <a href="sushisashimi.html">Sushi&Sashimi</a>
+            <a href="classicrolls.html">Classic Rolls</a>
+            <a href="specialrolls.html">Special Rolls</a>
+            <a href="sushientrees.html">Sushi Entrees</a>
+            <a href="classicentrees.html">Classic Entrees</a>
+            <a href="stoneentrees.html">Stone Entrees</a>
+            <a href="johnsspecials.html">John's Specials'</a>
+        </nav>
+
+        <div id="target">Loading...</div>
+        <script id="template" type="x-tmpl-mustache">
+           <div class="container">
+            <div class="menu">
+              {{#menuGroups}}
+              <h2 class="menu-group-heading">
+                {{menuGroupHeading}}
+              </h2>
+              <div class="menu-group">
+                {{#menuItems}}
+                <div class="menu-item">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading"> <span class="menu-item-name">
+                        {{name}}
+                      </span><span class="menu-item-price">
+                        {{price}}
+                      </span></h3>
+                    <p class="menu-item-description">
+                      {{description}}
+                    </p>
+                  </div>
+                </div>
+                {{/menuItems}}
+                {{/menuGroups}}
+               </div>
             </div>
           </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  EDAMAME
-                </span><span class="menu-item-price">
-                  $6.25
-                </span></h3>
-              <p class="menu-item-description">
-                Steamed green soybeans
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  PORK GYOZA (6PCS)
-                </span><span class="menu-item-price">
-                  $6.25
-                </span></h3>
-              <p class="menu-item-description">
-                Pan fried dumpling with pork
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  VEGETABLE GYOZA (6PCS)
-                </span><span class="menu-item-price">
-                  $6.25
-                </span></h3>
-              <p class="menu-item-description">
-                Pan fried dumpling with vegetables
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  HARU MAKI (2PCS)
-                </span><span class="menu-item-price">
-                  $6.25
-                </span></h3>
-              <p class="menu-item-description">
-                Deep fried Japanese spring rolls
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SHUMAI (6PCS)
-                </span><span class="menu-item-price">
-                  $8.25
-                </span></h3>
-              <p class="menu-item-description">
-                Shrimp dim sum
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SPICY SQUID
-                </span><span class="menu-item-price">
-                  $7.75
-                </span></h3>
-              <p class="menu-item-description">
-                Baked squid w. homemade spicy sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SALT PEPPER CHICKEN
-                </span><span class="menu-item-price">
-                  $6.75
-                </span></h3>
-              <p class="menu-item-description">
-                Fried chicken ball
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  AGEDASHI TOFU
-                </span><span class="menu-item-price">
-                  $9.25
-                </span></h3>
-              <p class="menu-item-description">
-                Fried tofu served in tempura sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  IKA MARU
-                </span><span class="menu-item-price">
-                  $9.25
-                </span></h3>
-              <p class="menu-item-description">
-                Grilled squid with teriyaki sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  COCONUT SHRIMP APPETIZER(5PCS)
-                </span><span class="menu-item-price">
-                  $8.25
-                </span></h3>
-              <p class="menu-item-description">
-                Jumbo shrimp rolled in an combination of coconut flakes, spices and bread crumbs for baking, served w.
-                coconut dipping
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHICKEN KATSU APPETIZER
-                </span><span class="menu-item-price">
-                  $8.25
-                </span></h3>
-              <p class="menu-item-description">
-                Crispy chicken breast w. special katsu dipping sauce
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  SHRIMP TEMPURA APPETIZER
-                </span><span class="menu-item-price">
-                  $7.95
-                </span></h3>
-              <p class="menu-item-description">
-                2 pieces of shrimp tempura with mixed tempura vegetables
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  CHICKEN TEMPURA APPETIZER
-                </span><span class="menu-item-price">
-                  $7.25
-                </span></h3>
-              <p class="menu-item-description">
-                2 pieces of tempura chicken with mixed tempura vegetables
-              </p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-text">
-              <h3 class="menu-item-heading"> <span class="menu-item-name">
-                  MIXED VEGGIE TEMPURA APPETIZER
-                </span><span class="menu-item-price">
-                  $7.95
-                </span></h3>
-              <p class="menu-item-description">
-                Mixed tempura vegetables
-              </p>
-            </div>
-          </div>
-          <h2 class="menu-group-heading">
-            SUSHI APPETIZERS
-          </h2>
-          <div class="menu-group">
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    KATHY'S SPECIAL
-                  </span><span class="menu-item-price">
-                    $10.25
-                  </span></h3>
-                <p class="menu-item-description">
-                  Seared tuna, spicy tuna and avocado with chef’s sauce, sliced red pepper on top
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    BLACK PEPPER TUNA
-                  </span><span class="menu-item-price">
-                    $10.75
-                  </span></h3>
-                <p class="menu-item-description">
-                  Seared black pepper tuna served w. special ponzu sauce
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    NIGIRI APPETIZER (5 PCS)
-                  </span><span class="menu-item-price">
-                    $10.75
-                  </span></h3>
-                <p class="menu-item-description">
-                  Tuna, salmon, yellowtail, escolar & cooked shrimp
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    SASHIMI APPETIZER (7 PCS)
-                  </span><span class="menu-item-price">
-                    $12.25
-                  </span></h3>
-                <p class="menu-item-description">
-                  Tuna, salmon, yellowtail, striped bass or escolar
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    SALMON DREAM (4 PCS)
-                  </span><span class="menu-item-price">
-                    $10.25
-                  </span></h3>
-                <p class="menu-item-description">
-                  Lobster salad wrapped by the sliced salmon, serving w. chef’s special sauce
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    ESCOLAR TATAKI
-                  </span><span class="menu-item-price">
-                    $10.25
-                  </span></h3>
-                <p class="menu-item-description">
-                  Seared sliced escolar with homemade ponzu dressing
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    TUNA TATAKI
-                  </span><span class="menu-item-price">
-                    $10.75
-                  </span></h3>
-                <p class="menu-item-description">
-                  Seared sliced tuna with homemade ponzu dressing
-                </p>
-              </div>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-text">
-                <h3 class="menu-item-heading"> <span class="menu-item-name">
-                    YELLOWTAIL JALAPENO
-                  </span><span class="menu-item-price">
-                    $10.75
-                  </span></h3>
-                <p class="menu-item-description">
-                  Yellowtail in wasabi and ponzu sauce topped with jalapeno
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        </script>
     </div>
-  </div>
 </body>
 
 
-
 <center>
-  <div class="footer">
-    TEL (508) 573-1732 <br>
-    1009 Boston Post Rd. E, Marlborough MA 01752
-    <br>
-    <a href="https://www.facebook.com/crazystone01752/" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/crazytunasushi/?hl=en" class="fa fa-instagram"></a>
-    <a href="https://www.yelp.com/biz/crazy-stone-marlborough-2" class="fa fa-yelp"></a>
-  </div>
+    <div class="footer">
+        TEL (508) 573-1732 <br>
+        1009 Boston Post Rd. E, Marlborough MA 01752
+        <br>
+        <a class="fa fa-facebook" href="https://www.facebook.com/crazystone01752/"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/crazytunasushi/?hl=en"></a>
+        <a class="fa fa-yelp" href="https://www.yelp.com/biz/crazy-stone-marlborough-2"></a>
+    </div>
 </center>
 </html>

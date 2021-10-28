@@ -1,0 +1,43 @@
+
+  
+
+  .doordashlogo {
+    overflow: hidden;
+    width:25%;
+    margin-top:50px;
+    margin-bottom: 20px;
+    background: none;
+  }
+  
+  .grubhublogo {
+    overflow: hidden;
+    width:20%;
+    margin-top:20px;
+    margin-bottom: 50px;
+    background: none;
+  }
+  
+  
+
+  body {
+    font-family: "Encode sans Condensed", sansserif;
+    font-size: 14px;
+    letter-spacing: 7px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+  }
+  
+
+  
+  h3 {
+    font-size: 17px;
+    letter-spacing: 6px;
+    margin: 40px 10px 10px 10px;
+  }
+  
+  
+  
+  
+ 

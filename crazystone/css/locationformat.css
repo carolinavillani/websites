@@ -1,0 +1,28 @@
+
+  
+  body {
+    font-family: "Encode sans Condensed", sansserif;
+    font-size: 14px;
+    letter-spacing: 7px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+  }
+  
+
+  
+  
+  
+ 
+  /*embedded map for location tab placement container*/
+  .container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .text {
+    font-size: 15px;
+  }
+  
