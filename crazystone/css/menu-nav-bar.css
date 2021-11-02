@@ -16,9 +16,21 @@
   display: center;
 }
 
+body nav {
+  font-family: "Encode sans Condensed", sansserif;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 2px;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  text-align:center;
+}
 h1 {
-  font-size: 20px;
+  font-size: 21px;
   margin: 0px 0px 0px 0px;
+  text-align:center;
+  font-weight:500;
 }
 
 nav a{
@@ -30,16 +42,18 @@ nav a{
   letter-spacing: 7px;
   color: #111;
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 13px;
   margin: 5;
 }
 
 nav a:hover:not(.active) {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 nav a.active {
   font-weight: bolder;
+    font-size:108%;
+    color: black;
 }
 
 nav a:hover {

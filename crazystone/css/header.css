@@ -13,6 +13,7 @@ header {
     background-color:#F6F4F3;
   }
 
+
   li a{
     float: left;
     display: block;
@@ -26,7 +27,7 @@ header {
     float: right;
     border-right: 1px solid #bbb;
     line-height: 0.2;
-    margin: 12px 3px;
+    margin: 12px 0px;
     text-align: right;
     padding: 15px 20px;
     font-family: 'Encode sans Condensed', sansserif;

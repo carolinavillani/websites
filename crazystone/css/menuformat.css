@@ -7,21 +7,29 @@
 .menu-group-heading {
   margin: 0;
   font-weight: bold;
-  padding-bottom: 0em;
-  padding-top: 0em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   font-size: 20px;
   text-align: left;
 }
 
 .menu-group {
-  display: grid;
+  display:grid;
   grid-template-columns: 1fr;
-  gap: 1.5em;
+  gap: 1em;
   padding: 1.5em 0;
 }
 
 .menu-item {
   display: flex;
+}
+
+.menu-item-type{
+  line-height: 2;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 .menu-item-text {
@@ -31,13 +39,14 @@
 .menu-item-heading {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  font-size:15px;
+  margin: 0px;
 }
 
 .johns-special-item-heading {
   padding-left: 3em;
   padding-right: 3em;
-  font-weight: bold;
+  font-weight: normal;
   padding-bottom: 0em;
   padding-top: 0em;
   font-size: 18px;
@@ -45,12 +54,12 @@
 }
 
 .menu-subheading {
-  margin-right: 0em;
-  margin-top:0em;
+  line-height: 2;
+  font-size:13px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: left;
-  padding-bottom: 1em;
-  padding-top: 0;
-  font-size: 11px;
 }
 
 .menu-item-name {
@@ -61,7 +70,7 @@
   line-height: 2;
   margin-left: 0;
   margin-top: 0;
-  margin-bottom: 5;
+  margin-bottom: 10px;
   margin-right: 90;
   text-align: left;
 }
@@ -69,17 +78,18 @@
 .menu-item-description1 {
   line-height: 2;
   margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-right: 90;
   text-align: left;
 }
 
 .menu-item-description2 {
-  line-height: 2;
+  
   margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 5;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 0.5em;
   margin-right: 90;
   text-align: left;
 }
@@ -87,7 +97,7 @@
 .johns-special-item-description {
   line-height: 2;
   padding-left: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   padding-right: 3em;
   text-align: center;
 }
@@ -102,5 +112,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
-  text-align: center;
+  text-align:left;
+ 
 }

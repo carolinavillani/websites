@@ -146,29 +146,76 @@ const mainMenu = {
         menuSubHeading: "Served with Onion Soup, Salad and Steamed Rice",
         menuItems: [
           {
-            name: "MIXED VEGETABLE",
-            description: "Steamed Rice (Fried Rice +$2.50)",
+            name: "KATSU CHICKEN",
+            description: "11 oz, serving with one onion soup, one salad, and one white rice (fried rice +$2.50)",
             price: "$11.75",
           },
-          {
-            name: "TEMPURA CHICKEN (6PCS)",
-            description: "Steamed Rice (Fried Rice +$2.50)",
-            price: "$6.95",
-          },
-          {
-              name: "TEMPURA JUMBO SHRIMP",
-              description1: "6 pcs of tempura shrimp and mixed tempura vegetables",
-              description2:"Steamed Rice (Fried Rice +$2.50)",
-              price: "$7.95",
-            },
-            {
-              name: "TEMPURA SEAFOOD",
-              description1: "Shrimp, scallop, salmon, kani (imitation crabmeat) & seasonal vegetables",
-              description2:"Steamed Rice (Fried Rice +$2.50)",
-              price: "$8.95",
-            },
+          
         ],
       },
+      {
+        menuGroupHeading: "NOODLES & RICE",
+        menuItems: [
+          {
+            name: "HAWAII FRIED RICE",
+            description: "Pineapple, onion and egg",
+            chooseone: "Choose One:",
+            type1:"Vegetable",
+            type2:"Chicken",
+            type3:"Beef",
+            type4:"Seafood",
+            type5:"Shrimp",
+            price1: "$11.75",
+            price2: "$12.75",
+            price3:"$13.75",
+            price4: "$13.75",
+            price5: "$15.75",
+           
+          },
+          {
+            name: "HOUSE SPICY FRIED RICE",
+            description: "Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables",
+            chooseone: "Choose One:",
+            type1:"Vegetable",
+            type2:"Chicken",
+            type3:"Beef",
+            type4:"Seafood",
+            type5:"Shrimp",
+            price1: "$11.75",
+            price2: "$12.75",
+            price3:"$13.75",
+            price4: "$13.75",
+            price5: "$15.75",
+           
+          },
+          {
+            name: "Lo Mein or Udon",
+            description: "Basic with Homemade Spicy Sauce, Egg, Onions and Vegetables",
+            chooseone: "Choose One:",
+            type1:"Vegetable",
+            type2:"Chicken",
+            type3:"Beef",
+            type4:"Seafood",
+            type5:"Shrimp",
+            price1: "$11.75",
+            price2: "$12.75",
+            price3:"$13.75",
+            price4: "$13.75",
+            price5: "$15.75",
+           
+          },
+          {
+            name: "SINGAPORE NOODLES",
+            description: "Thin Rice Noodles Sauteed with A Combination of Chicken, Shrimp, Beef, Egg Mixed Vegetables and Light Curry Sauce",
+            price: "$13.75",
+          },
+          
+        ],
+      },
+       
+          
+     
+
   ],
 };
 

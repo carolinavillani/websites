@@ -49,21 +49,20 @@
            <div class="container">
             <div class="menu">
               {{#menuGroups}}
-              <h2 class="menu-group-heading">
+              <div class="menu-group-heading">
                 {{menuGroupHeading}}
-              </h2>
               <div class="menu-subheading">
                 {{menuSubHeading}}
-              </div>
+              </div></div>
               <div class="menu-group">
                 {{#menuItems}}
                 <div class="menu-item">
                   <div class="menu-item-text">
-                    <h3 class="menu-item-heading"> <span class="menu-item-name">
+                    <div class="menu-item-heading"> <span class="menu-item-name">
                         {{name}}
                       </span><span class="menu-item-price">
                         {{price}}
-                      </span></h3>
+                      </span></div>
                     <p class="menu-item-description">
                       {{description}}
                     </p>
